@@ -66,7 +66,9 @@ const Footer = () => {
         <div className="h-[30%] w-full flex items-center justify-center ">
           <div className="h-[80%] w-[50%]">
             <div className="py-2">
-              <p className="text-white font-sm font-mono">Follow Me On</p>
+              <p className="text-white tracking-tight font-sm font-mono">
+                Connect with me{" "}
+              </p>
             </div>
             <div className="flex justify-between  w-[60%] ">
               {follow.map((item) => {

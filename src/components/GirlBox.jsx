@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const GirlBox = () => {
   return (
@@ -24,9 +25,7 @@ const GirlBox = () => {
           </div>
           <div className="w-full mt-5">
             {" "}
-            <button className="rounded-md bg-[#FFFFFF] px-3 py-2 font-semibold uppercase">
-              see clan
-            </button>
+            <Button />
           </div>
         </div>
         <div className="h-full bg-[url('./images/Girl.webp')] bg-cover bg-center w-[50%]  flex justify-center items-center "></div>

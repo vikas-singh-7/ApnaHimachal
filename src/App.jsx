@@ -4,21 +4,39 @@ import DetailBox from "./components/DetailBox";
 import GirlBox from "./components/GirlBox";
 import PekkaBox from "./components/PekkaBox";
 import Footer from "./components/Footer";
+import Log from "./components/Log";
 
 import LocomotiveScroll from "locomotive-scroll";
+import { Route, Routes } from "react-router-dom";
+import Founding from "./components/Founding";
+import { useEffect } from "react";
 const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div className="h-auto w-full">
-      
-      <Hero />
-      <DetailBox />
-      <GirlBox />
-      <PekkaBox />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {" "}
+              <Hero /> <DetailBox /> <GirlBox /> <PekkaBox />
+            </>
+          }
+        />
+        <Route path="/pillars" element={<Founding />} />
+        <Route path="/logs" element={<Log />} />
+      </Routes>
+
       <Footer />
     </div>
   );
 };
 
 export default App;
+
+// make routes for xp and team and compo also
