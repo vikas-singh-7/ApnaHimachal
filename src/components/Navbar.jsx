@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="h-[12vh] flex items-center justify-around bg-zinc-300  ">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear   flex-col justify-center items-center">
         <button
           className="flex flex-col justify-center items-center"
           onClick={() => {
@@ -23,29 +23,35 @@ const Navbar = () => {
           <p className="text-md font-mono">Home</p>
         </button>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <button onClick={() => {
+      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear flex-col justify-center items-center">
+        <button
+          onClick={() => {
             navigation("/pillars");
-          }} className="flex flex-col justify-center items-center">
+          }}
+          className="flex flex-col justify-center items-center"
+        >
           <MdManageAccounts size={40} />
           <p className="text-md font-mono">Founders</p>
         </button>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <button onClick={() => {
+      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear flex-col justify-center items-center">
+        <button
+          onClick={() => {
             navigation("/logs");
-          }} className="flex flex-col justify-center items-center">
+          }}
+          className="flex flex-col justify-center items-center"
+        >
           <SiLogseq size={40} />
           <p className="text-md font-mono">Logs</p>
         </button>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear flex-col justify-center items-center">
         <button className="flex flex-col justify-center items-center">
           <RiTeamFill size={40} />
           <p className="text-md font-mono">Team</p>
         </button>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex w-[8%] flex-col rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear justify-center items-center">
         <button className="flex flex-col justify-center items-center">
           <FaRobot size={40} />
           <p className="text-md font-mono">XP titans</p>
