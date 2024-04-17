@@ -32,6 +32,16 @@ const About = () => {
           />
         );
       })}
+      <div className="h-[15vh] bg-[#1F7AEB] p-2 flex justify-around items-center">
+        <div className="w-[30%] h-[100%] hover:cursor-pointer hover:bg-slate-300  bg-white flex justify-center items-center rounded-md ">
+          <h2 className="text-xl font-mono">View Source Code</h2>
+        </div>
+        <div className="">
+          <h3 className="text-xl font-mono text-white font-semibold">
+            Feel Free To Make Out Your Modifications and Contributions :)
+          </h3>
+        </div>
+      </div>
       <div className="h-[70vh] bg-yellow-500 p-2 flex justify-center items-center">
         <div className="h-[100%] w-[100%] grid gap-2 rounded-md  grid-cols-12 grid-rows-12">
           <div className="col-span-6 row-span-12 flex justify-center items-center">
