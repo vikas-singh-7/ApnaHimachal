@@ -19,7 +19,7 @@ const Pillars = ({
           <div className="h-[60vh] w-full gap-2 p-1 grid grid-cols-12 grid-rows-12 ">
             <div className="col-span-7 row-span-12 grid grid-cols-7 grid-rows-1 p-1  gap-1 border-2 rounded-md ">
               <div
-                className={`col-span-3 rounded-md bg-cover bg-center h-full w-full`}
+                className={`col-span-3 border-2  border-zinc-500 rounded-md bg-cover bg-center h-full w-full`}
                 style={{ backgroundImage: `url(${image})` }}
               ></div>
               <div className=" bg-[#7B8EB5] col-span-4 rounded-md  grid grid-cols-1 grid-rows-5 ">

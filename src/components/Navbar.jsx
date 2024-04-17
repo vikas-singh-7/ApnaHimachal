@@ -8,55 +8,52 @@ import { useNavigate } from "react-router-dom";
 import { MdManageAccounts } from "react-icons/md";
 
 const Navbar = () => {
+  const navs = [
+    {
+      link: "/",
+      logo: <IoHome size={40} />,
+      desc: "Home",
+    },
+    {
+      link: "/pillars",
+      logo: <MdManageAccounts size={40} />,
+      desc: "Founders",
+    },
+    {
+      link: "/logs",
+      logo: <SiLogseq size={40} />,
+      desc: "Logs",
+    },
+    {
+      link: "/team",
+      logo: <RiTeamFill size={40} />,
+      desc: "Team",
+    },
+    {
+      link: "/xp",
+      logo: <FaRobot size={40} />,
+      desc: "XP Titans",
+    },
+  ];
   const navigation = useNavigate();
 
   return (
-    <div className="h-[12vh] flex items-center justify-around bg-zinc-300  ">
-      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear   flex-col justify-center items-center">
-        <button
-          className="flex flex-col justify-center items-center"
-          onClick={() => {
-            navigation("/");
-          }}
-        >
-          <IoHome size={40} />
-          <p className="text-md font-mono">Home</p>
-        </button>
-      </div>
-      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear flex-col justify-center items-center">
-        <button
-          onClick={() => {
-            navigation("/pillars");
-          }}
-          className="flex flex-col justify-center items-center"
-        >
-          <MdManageAccounts size={40} />
-          <p className="text-md font-mono">Founders</p>
-        </button>
-      </div>
-      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear flex-col justify-center items-center">
-        <button
-          onClick={() => {
-            navigation("/logs");
-          }}
-          className="flex flex-col justify-center items-center"
-        >
-          <SiLogseq size={40} />
-          <p className="text-md font-mono">Logs</p>
-        </button>
-      </div>
-      <div className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear flex-col justify-center items-center">
-        <button className="flex flex-col justify-center items-center">
-          <RiTeamFill size={40} />
-          <p className="text-md font-mono">Team</p>
-        </button>
-      </div>
-      <div className="flex w-[8%] flex-col rounded-md hover:bg-[#3F3F46] hover:text-white transition-all duration-150 ease-linear justify-center items-center">
-        <button className="flex flex-col justify-center items-center">
-          <FaRobot size={40} />
-          <p className="text-md font-mono">XP titans</p>
-        </button>
-      </div>
+    <div className="h-[12vh] flex items-center justify-around bg-[#1F7AEB]  ">
+      {navs.map((item) => {
+        return (
+          <div
+            className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all hover:cursor-pointer duration-150 ease-linear   flex-col justify-center items-center"
+            onClick={() => {
+              navigation(item.link);
+            }}
+          >
+            <div className="flex flex-col justify-center items-center">
+              {item.logo}
+              <p className="text-md font-mono">{item.desc}</p>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
