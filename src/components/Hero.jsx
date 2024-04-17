@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className='md:h-[80vh] max-sm:h-[50vh]  bg-[url("./images/heroImage.webp")]  bg-center bg-cover relative max-sm:bg-[url("./images/heromobile.webp")]'>
+    <div
+      className='h-[80vh]  bg-center bg-cover relative'
+      style={{ backgroundImage: "url('./images/heroImage.webp')" }}
+    >
       <div className="absolute left-[50%] top-[50%] -translate-y-[50%] -translate-x-[50%] p-2 w-[40%] flex justify-center flex-col items-center ">
         <h1 className="text-[3.5rem]   tracking-tighter  font-semibold font-[cursive]">
           Apna Himachal

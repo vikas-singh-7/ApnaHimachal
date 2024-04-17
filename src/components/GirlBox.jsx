@@ -28,7 +28,10 @@ const GirlBox = () => {
             <Button />
           </div>
         </div>
-        <div className="h-full bg-[url('./images/Girl.webp')] bg-cover bg-center w-[50%]  flex justify-center items-center "></div>
+        <div
+          className="h-full bg-cover bg-center w-[50%]  flex justify-center items-center "
+          style={{ backgroundImage: "url('./images/Girl.webp')" }}
+        ></div>
       </div>
     </div>
   );

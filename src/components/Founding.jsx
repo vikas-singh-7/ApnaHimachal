@@ -56,6 +56,21 @@ const Founding = () => {
       role: "Co-Leader",
     },
     {
+      color: "#FFB703",
+      image: "./images/image5.webp",
+      profile: "./images/Storm.jpg",
+      name: "Sahil",
+      name2: "Sahil (Storm)",
+      link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=2VPYPGLJ9",
+      character: [
+        "You,ve been the backbone of this Clan from the start, thank you for your loyalty and hard work!",
+        "Your unwavering loyalty and commitment as our co-leader keep us strong.",
+        "Your dedication and leadership have made our Clan stronger thank you for being such an integral part of our journey!",
+        "You're not just a founding member, you're the heart and soul of our Clan thank you for everything you do!",
+      ],
+      role: "Co-Leader",
+    },
+    {
       color: "#003A96",
       image: "./images/ashish.jpg",
       profile: "./images/ashishprofile.jpg",

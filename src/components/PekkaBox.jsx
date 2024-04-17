@@ -3,7 +3,10 @@ import React from "react";
 const PekkaBox = () => {
   return (
     <div className="h-[100vh] bg-[#1F7AEB] flex gap-2 justify-center items-center">
-      <div className="image h-full w-full  bg-[url('./images/pekka.webp')] bg-cover bg-center "></div>
+      <div
+        className="image h-full w-full  bg-cover bg-center "
+        style={{ backgroundImage: "url('./images/pekka.webp')" }}
+      ></div>
 
       <div className="image h-full w-full  bg-cover bg-center flex flex-col justify-start ">
         <div className="heading  h-[15%]   mt-16">
@@ -22,8 +25,7 @@ const PekkaBox = () => {
             <li className="list-disc">
               No harassment or bullying of other clan members.
             </li>
-          
-          
+
             <li className="list-disc list-outside ">
               Members should be active regularly,participating in clan
               wars,games,and other events.
@@ -34,7 +36,7 @@ const PekkaBox = () => {
             <li className="list-disc">
               Encourage members to donate troops regularly.
             </li>
-          
+
             <li className="list-disc">
               Follow instructions and advice from clan leaders and co-leaders.
             </li>

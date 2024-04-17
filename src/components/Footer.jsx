@@ -91,7 +91,10 @@ const Footer = () => {
                 target="blank"
                 href="https://apps.apple.com/us/developer/supercell/id488106216"
               >
-                <div className="  border-y-[1px] bg-[url('./images/appstore.webp')] bg-cover bg-center h-full w-full rounded-md"></div>
+                <div
+                  className="  border-y-[1px]  bg-cover bg-center h-full w-full rounded-md"
+                  style={{ backgroundImage: "url('./images/appstore.webp')" }}
+                ></div>
               </a>
             </div>
             <div className="h-[90%] w-full  px-4 py-[2px]">
@@ -99,7 +102,10 @@ const Footer = () => {
                 target="blank"
                 href="https://play.google.com/store/apps/dev?id=6715068722362591614&hl=en&pli=1"
               >
-                <div className="  border-y-[1px] bg-[url('./images/playstore.webp')] bg-cover bg-center h-full w-full rounded-md "></div>
+                <div
+                  className="  border-y-[1px] bg-cover bg-center h-full w-full rounded-md "
+                  style={{ backgroundImage: "url('./images/playstore.webp')" }}
+                ></div>
               </a>
             </div>
           </div>
