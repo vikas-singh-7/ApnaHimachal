@@ -33,9 +33,15 @@ const About = () => {
         );
       })}
       <div className="h-[15vh] bg-[#1F7AEB] p-2 flex justify-around items-center">
-        <div className="w-[30%] h-[100%] hover:cursor-pointer hover:bg-slate-300  bg-white flex justify-center items-center rounded-md ">
-          <h2 className="text-xl font-mono">View Source Code</h2>
-        </div>
+        <a
+          href="https://github.com/vikas-singh-7/ApnaHimachal"
+          className="w-[30%] h-[100%] hover:cursor-pointer hover:bg-slate-300  bg-white flex justify-center items-center rounded-md "
+          target="blank"
+        >
+          <div>
+            <h2 className="text-xl font-mono">View Source Code</h2>
+          </div>
+        </a>
         <div className="">
           <h3 className="text-xl font-mono text-white font-semibold">
             Feel Free To Make Out Your Modifications and Contributions :)
