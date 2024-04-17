@@ -42,6 +42,7 @@ const Navbar = () => {
       {navs.map((item) => {
         return (
           <div
+            key={Math.random()}
             className="flex w-[8%] rounded-md hover:bg-[#3F3F46] hover:text-white transition-all hover:cursor-pointer duration-150 ease-linear   flex-col justify-center items-center"
             onClick={() => {
               navigation(item.link);

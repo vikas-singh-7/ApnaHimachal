@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import TeamGrid from "./TeamGrid";
 
 const TeamMembers = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />
@@ -40,7 +43,7 @@ const TeamMembers = () => {
           </div>
         </div>
       </div>
-      <TeamGrid/>
+      <TeamGrid />
     </>
   );
 };

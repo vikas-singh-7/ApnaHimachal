@@ -6,7 +6,7 @@ const DetailBox = () => {
   const navigate = useNavigate();
   const details = [
     {
-      image: "./images/founding.jpg",
+      image: "./images/founding-min.jpg",
       para1: "Fouding Members",
       para2: "your courage and loyalty built our clan's legacy",
       navigation: "/pillars",
@@ -24,7 +24,7 @@ const DetailBox = () => {
       navigation: "/Team",
     },
     {
-      image: "./images/Xp.jpg",
+      image: "./images/Xp-min.jpg",
       para1: "XP Titans of the Clan",
       para2: "Masters of experience,your skill lights our path to victory!",
       navigation: "/XP",
