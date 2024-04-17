@@ -31,7 +31,7 @@ const Log = () => {
         "Winning Percentage: Approximately 63.3%",
         "Our clan's teamwork and communication are highlighted in the war log, making us a formidable force in every battle.",
         "Teamwork: Our clan works together with strong coordination and strategy.",
-        
+
         "Our war log paints a picture of a clan that is dedicated to growth, excellence, and triumph in Crystal League 1.",
       ],
       image: "./images/war2.jpg",
@@ -44,12 +44,18 @@ const Log = () => {
       {details.map((item, index) => {
         return index == 0 ? (
           <LogChild
+            key={Math.random()}
             image={item.image}
             logo={item.logo}
             details={item.details}
           />
         ) : (
-          <Log2 image={item.image} logo={item.logo} details={item.details} />
+          <Log2
+            key={Math.random()}
+            image={item.image}
+            logo={item.logo}
+            details={item.details}
+          />
         );
       })}
     </>

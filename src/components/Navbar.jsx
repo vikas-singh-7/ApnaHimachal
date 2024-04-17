@@ -32,7 +32,7 @@ const Navbar = () => {
     {
       link: "/about",
       logo: <FaRobot size={40} />,
-      desc: "XP Titans",
+      desc: "About",
     },
   ];
   const navigation = useNavigate();

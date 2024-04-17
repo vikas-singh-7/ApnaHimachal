@@ -25,8 +25,8 @@ const DetailBox = () => {
     },
     {
       image: "./images/Xp-min.jpg",
-      para1: "About Website",
-      para2: "Tech-Stack ",
+      para1: "About",
+      para2: "Me and Tech used",
       navigation: "/about",
     },
   ];
