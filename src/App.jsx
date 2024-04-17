@@ -5,13 +5,13 @@ import GirlBox from "./components/GirlBox";
 import PekkaBox from "./components/PekkaBox";
 import Footer from "./components/Footer";
 import Log from "./components/Log";
-
 import LocomotiveScroll from "locomotive-scroll";
 import { Route, Routes } from "react-router-dom";
 import Founding from "./components/Founding";
 import { useEffect } from "react";
 
 import TeamMembers from "./components/Team";
+import About from "./components/About";
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,6 +33,7 @@ const App = () => {
         <Route path="/pillars" element={<Founding />} />
         <Route path="/logs" element={<Log />} />
         <Route path="/team" element={<TeamMembers />} />
+        <Route path="/about" element={<About />} />
       </Routes>
 
       <Footer />

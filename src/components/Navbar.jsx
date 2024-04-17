@@ -30,7 +30,7 @@ const Navbar = () => {
       desc: "Team",
     },
     {
-      link: "/xp",
+      link: "/about",
       logo: <FaRobot size={40} />,
       desc: "XP Titans",
     },

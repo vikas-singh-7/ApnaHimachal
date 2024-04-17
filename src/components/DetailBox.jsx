@@ -25,9 +25,9 @@ const DetailBox = () => {
     },
     {
       image: "./images/Xp-min.jpg",
-      para1: "XP Titans of the Clan",
-      para2: "Masters of experience,your skill lights our path to victory!",
-      navigation: "/XP",
+      para1: "About Website",
+      para2: "Tech-Stack ",
+      navigation: "/about",
     },
   ];
   return (

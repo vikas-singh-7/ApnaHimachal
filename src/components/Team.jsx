@@ -36,8 +36,8 @@ const TeamMembers = () => {
               making our clan stronger and more united every day!"
             </h3>
           </div>
-          <div className="flex -mt-5 col-span-12 row-span-1 justify-center items-center ">
-            <p className="bg-black text-white rounded-md h-[75%] px-3 py-2 hover:bg-zinc-700 transition-all duration-150 ease-linear ">
+          <div className="flex  col-span-12 row-span-1 justify-center items-center ">
+            <p className="bg-black text-white rounded-md h-[75%] px-3 py-2 hover:bg-zinc-700  transition-all duration-150 ease-linear ">
               Our Team
             </p>
           </div>
