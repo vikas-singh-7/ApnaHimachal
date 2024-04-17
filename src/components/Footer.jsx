@@ -112,7 +112,7 @@ const Footer = () => {
                 key={Math.random()}
                 target="blank"
                 href={item.link}
-                className="tracking-tighter hover:text-zinc-300 text-white font-mono text-sm"
+                className="tracking-tighter hover:text-white text-zinc-300 font-mono text-sm"
               >
                 {item.name}
               </a>
@@ -125,7 +125,7 @@ const Footer = () => {
               {address.map((item) => (
                 <p
                   key={Math.random()}
-                  className="text-sm text-white hover:text-zinc-300 tracking-tight "
+                  className="text-sm text-zinc-300 hover:text-zinc-100 tracking-tight "
                 >
                   {item}
                 </p>

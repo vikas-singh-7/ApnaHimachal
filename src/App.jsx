@@ -10,6 +10,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import { Route, Routes } from "react-router-dom";
 import Founding from "./components/Founding";
 import { useEffect } from "react";
+
+import TeamMembers from "./components/Team";
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -30,6 +32,7 @@ const App = () => {
         />
         <Route path="/pillars" element={<Founding />} />
         <Route path="/logs" element={<Log />} />
+        <Route path="/team" element={<TeamMembers />} />
       </Routes>
 
       <Footer />
