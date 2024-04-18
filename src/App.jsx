@@ -1,4 +1,5 @@
 import React from "react";
+import { useCallback, useMemo } from "react";
 import Hero from "./components/Hero";
 import DetailBox from "./components/DetailBox";
 import GirlBox from "./components/GirlBox";
@@ -9,36 +10,109 @@ import LocomotiveScroll from "locomotive-scroll";
 import { Route, Routes } from "react-router-dom";
 import Founding from "./components/Founding";
 import { useEffect } from "react";
+import { useState } from "react";
 
 import TeamMembers from "./components/Team";
 import About from "./components/About";
+
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const locomotiveScroll = new LocomotiveScroll();
+  const [clanData, setClanData] = useState("");
 
-  return (
-    <div className="h-auto w-full">
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              {" "}
-              <Hero /> <DetailBox /> <GirlBox /> <PekkaBox />
-            </>
-          }
-        />
-        <Route path="/pillars" element={<Founding />} />
-        <Route path="/logs" element={<Log />} />
-        <Route path="/team" element={<TeamMembers />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+  const [lastFetchedData, setLastFetchedData] = useState(null);
 
-      <Footer />
-    </div>
-  );
+  const fetchData = useCallback(async () => {
+    try {
+      const response = await fetch("http://localhost:3000/api/clash-of-clans");
+      const jsonData = await response.json();
+
+      // Compare new data with the current data
+      if (JSON.stringify(jsonData) !== JSON.stringify(lastFetchedData)) {
+        setClanData(jsonData);
+        setLastFetchedData(jsonData);
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }, [lastFetchedData]);
+
+  useEffect(() => {
+    fetchData();
+
+    // Set up polling to fetch data every 10 seconds
+    const intervalId = setInterval(fetchData, 800);
+
+    // Cleanup interval when component unmounts
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [fetchData]);
+
+  // Use useMemo to optimize expensive computations
+  const renderedData = useMemo(() => {
+    // Perform computations here if needed
+    return clanData;
+  }, [clanData]);
+  // useEffect(() => {
+  //   // Define the URL for the endpoint you created in your Node.js server
+  //   const url = "http://localhost:3000/api/clash-of-clans";
+
+  //   // Fetch data from the endpoint
+  //   fetch(url)
+  //     .then((response) => {
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP error! status: ${response.status}`);
+  //       }
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       // console.log(data);
+  //       // Set the data to state
+  //       setClanData(data);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data from server:", error);
+  //     });
+  // }, []);
+  if (!renderedData) {
+    return (
+      <div>
+        <div className="h-screen bg-blue-500 text-white font-mono font-semibold flex justify-center items-center text-[4rem]">
+          Loading Please Wait.....
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <>
+        <div className="h-auto w-full">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  {" "}
+                  <Hero data={clanData} /> <DetailBox data={clanData} />{" "}
+                  <GirlBox data={clanData} /> <PekkaBox data={clanData} />
+                </>
+              }
+            />
+            <Route path="/pillars" element={<Founding />} />
+            <Route path="/logs" element={<Log data={clanData} />} />
+            <Route path="/team" element={<TeamMembers data={clanData} />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+
+          <Footer />
+        </div>
+        ;
+      </>
+    );
+  }
 };
 
 export default App;

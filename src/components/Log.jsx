@@ -4,10 +4,11 @@ import LogChild from "./LogChild";
 import { useEffect } from "react";
 import Log2 from "./Log2";
 
-const Log = () => {
+const Log = ({ data }) => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
   }, []);
+ 
 
   const details = [
     {
@@ -44,6 +45,7 @@ const Log = () => {
       {details.map((item, index) => {
         return index == 0 ? (
           <LogChild
+            data={data}
             key={Math.random()}
             image={item.image}
             logo={item.logo}
