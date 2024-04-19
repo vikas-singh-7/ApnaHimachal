@@ -38,7 +38,7 @@ const TeamMembers = ({ data }) => {
             </h3>
           </div>
           <div className="flex  col-span-12 row-span-1 justify-center items-center ">
-            <p className="bg-black text-white rounded-md h-[75%] px-3 py-2 hover:bg-zinc-700 team-card2  transition-all duration-200 ease-linear ">
+            <p className="bg-black text-white rounded-md  px-3 py-2 hover:bg-zinc-700 team-card2  transition-all duration-200 ease-linear ">
               we are a team of {data.memberList.length}
             </p>
           </div>
