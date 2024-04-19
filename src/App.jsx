@@ -25,6 +25,7 @@ const App = () => {
   const [lastFetchedData, setLastFetchedData] = useState(null);
 
   const fetchData = useCallback(async () => {
+    console.log("req send to server")
     try {
       const response = await fetch("http://localhost:3000/api/clash-of-clans");
       const jsonData = await response.json();
@@ -43,7 +44,7 @@ const App = () => {
     fetchData();
 
     // Set up polling to fetch data every 10 seconds
-    const intervalId = setInterval(fetchData, 800);
+    const intervalId = setInterval(fetchData, 1000);
 
     // Cleanup interval when component unmounts
     return () => {
@@ -57,6 +58,7 @@ const App = () => {
     return clanData;
   }, [clanData]);
   // useEffect(() => {
+  //   console.log("req sent to server")
   //   // Define the URL for the endpoint you created in your Node.js server
   //   const url = "http://localhost:3000/api/clash-of-clans";
 
@@ -72,7 +74,7 @@ const App = () => {
   //       // console.log(data);
   //       // Set the data to state
   //       setClanData(data);
-  //       setLoading(false);
+  //       // setLoading(false);
   //     })
   //     .catch((error) => {
   //       console.error("Error fetching data from server:", error);
@@ -101,7 +103,7 @@ const App = () => {
                 </>
               }
             />
-            <Route path="/pillars" element={<Founding />} />
+            <Route path="/pillars" element={<Founding data={clanData} />} />
             <Route path="/logs" element={<Log data={clanData} />} />
             <Route path="/team" element={<TeamMembers data={clanData} />} />
             <Route path="/about" element={<About />} />
@@ -109,7 +111,6 @@ const App = () => {
 
           <Footer />
         </div>
-        ;
       </>
     );
   }

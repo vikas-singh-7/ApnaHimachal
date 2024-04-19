@@ -7,7 +7,8 @@ const LogChild = ({ image, details, logo, data }) => {
       <div className="h-[100vh] bg-[#1F7AEB] grid gap-2 grid-cols-2 grid-rows-1 p-5">
         <div
           className="  bg-cover bg-center col-span-1 bg-[url('./images/logs.png')] rounded-md"
-          style={{ backgroundImage: `url(${logo})` }}
+          style={{ backgroundImage: `url(${logo
+            })` }}
         ></div>
         <div className="col-span-1 border-2  gap-5 rounded-md grid p-2 grid-cols-1 grid-rows-2">
           <div className="row-span-1">

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import TeamGrid from "./TeamGrid";
+import TeamPlayet from "./TeamPlayet";
 
 const TeamMembers = ({ data }) => {
+  console.log(data.memberList.length);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,7 +23,7 @@ const TeamMembers = ({ data }) => {
           <div className="row-span-9 border-[2px] border-black col-span-5 rounded-md bg-violet-500 overflow-hidden flex p-2 flex-col items-center">
             <div className="h-full hover:scale-105 transition-all duration-150 ease-linear w-full flex flex-col justify-center items-center">
               <div className="h-[60%] w-[40%] rounded-md flex justify-center items-center">
-                <img src="./images/clan-badge.png" alt="" />
+                <img src={data.badgeUrls.large} alt="" />
               </div>
               <div className="h-[40%] flex justify-center  w-full">
                 <h2 className="font-[cursive] text-[2rem] text-white font-semibold">
@@ -38,7 +40,7 @@ const TeamMembers = ({ data }) => {
           </div>
           <div className="flex  col-span-12 row-span-1 justify-center items-center ">
             <p className="bg-black text-white rounded-md h-[75%] px-3 py-2 hover:bg-zinc-700  transition-all duration-150 ease-linear ">
-              Our Team
+              we are super {data.memberList.length}
             </p>
           </div>
         </div>
@@ -46,49 +48,7 @@ const TeamMembers = ({ data }) => {
       {/* <TeamGrid /> */}
       <div className="grid grid-cols-4 gap-3 p-2 bg-yellow-500 flex-col w-full ">
         {data.memberList.map((item) => {
-          return (
-            <div
-              key={Math.random()}
-              className="bg-gradient-to-r col-span-1 h-[55vh] w-[22vw] border-white  border-2  from-blue-500 to-zinc-400 shadow-lg rounded-lg p-7  font-mono max-w-md mx-auto text-white"
-            >
-              <div className="flex items-center mb-4">
-                <span className="text-xl font-semibold">
-                  <img src={item.league.iconUrls.small} alt="" />
-                </span>
-              </div>
-
-              <div className="text-2xl font-bold mb-4  ">
-                <span className="text-gray-200  ">{item.name}</span>
-                <span className="text-sm text-gray-300  ">({item.role})</span>
-              </div>
-
-              <div className="flex items-center mb-4">
-                <img src="./images/th.webp" alt="" className="h-[2.5em]" />
-                <span className="text-lg">
-                  Town Hall Level: {item.townHallLevel}
-                </span>
-              </div>
-
-              <div className="flex items-center mb-4">
-                <img src="./images/trophies.png" alt="" className="h-[2.5em]" />
-                <span className="text-lg">Trophies: {item.trophies}</span>
-              </div>
-
-              <div className="flex items-center mb-4">
-              <img src="./images/troops.webp" alt="" className="h-[2.5em]" />
-                <span className="text-lg">
-                  Donations Done: {item.donations}
-                </span>
-              </div>
-
-              <div className="flex items-center mb-4">
-              <img src="./images/troops1.webp" alt="" className="h-[2.5em]" />
-                <span className="text-lg">
-                  Donations Received: {item.donationsReceived}
-                </span>
-              </div>
-            </div>
-          );
+          return <TeamPlayet key={Math.random()} item={item} data={data} />;
         })}
       </div>
     </>

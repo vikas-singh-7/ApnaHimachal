@@ -3,8 +3,11 @@ import Pillars from "./Pillars";
 import { useEffect } from "react";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
+import TeamPlayet from "./TeamPlayet";
+import { plugin } from "postcss";
 
-const Founding = () => {
+const Founding = ({ data }) => {
+  console.log(data);
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
   }, []);
@@ -14,7 +17,14 @@ const Founding = () => {
       color: "#1F7AEB",
       image: "./images/king1.webp",
       profile: "./images/leader.jpg",
-      name: "Heer Da Ranjha",
+      name: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          console.log("leaderFound");
+          player = item.name;
+        }
+        return player;
+      }),
       name2: "Sonu Desi (Heer Da Ranjha)",
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=2G00RYVPL",
       character: [
@@ -89,6 +99,7 @@ const Founding = () => {
   return (
     <>
       <Navbar />
+      {/* <TeamPlayet/> */}
       {pillars.map((item) => {
         return (
           <Pillars

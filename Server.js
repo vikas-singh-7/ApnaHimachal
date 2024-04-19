@@ -15,13 +15,13 @@ app.use(
 
 // Your Clash of Clans API key
 const API_KEY =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjIxZTU5NmI4LTY0YzQtNDkxMy1hNDI1LTZiNTRiMjYyOGE0NCIsImlhdCI6MTcxMzQzNzA0NSwic3ViIjoiZGV2ZWxvcGVyL2JmMGZmN2M2LTg0OTUtNjg5NC0wZWExLTU2YTYzY2Y2Zjc2MiIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjEwNi4yMjEuMTQxLjE2OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.85gYsQvmuMDAedvBHPVj_oWiyk0ILMbhVxc8OhVHC-u9II8K3TjeIP9sW_kOG5oLBFsRNO9CYGIRqh7mPpVCGw"; // Replace with your actual API key
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjUwOWY2YmE5LTE2NzMtNGU5Ni1hZmNiLTcxYjk3MGNmMDFkNCIsImlhdCI6MTcxMzUwNDIwNywic3ViIjoiZGV2ZWxvcGVyL2JmMGZmN2M2LTg0OTUtNjg5NC0wZWExLTU2YTYzY2Y2Zjc2MiIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjEwNi4yMjEuMTMzLjI0MCJdLCJ0eXBlIjoiY2xpZW50In1dfQ.12dt2e-DD1RwWeinf0veeq0VtTWsfAjZZgpsYACwjs-Lb0hE46G5dffLogHko-XxbEDyUULp64yvDVWQIzOZ7w"; // Replace with your actual API key
 
 // Base URL for the Clash of Clans API
 const BASE_URL = "https://api.clashofclans.com/v1/clans/%23Q8CLCGYP";
 
 // Port number for the server to listen on
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // Define an endpoint to handle incoming requests from the React app
 app.get("/api/clash-of-clans", async (req, res) => {
