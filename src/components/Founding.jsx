@@ -2,9 +2,6 @@ import React from "react";
 import Pillars from "./Pillars";
 import { useEffect } from "react";
 import Navbar from "./Navbar";
-import { useNavigate } from "react-router-dom";
-import TeamPlayet from "./TeamPlayet";
-import { plugin } from "postcss";
 
 const Founding = ({ data }) => {
   console.log(data);
@@ -20,7 +17,6 @@ const Founding = ({ data }) => {
       name: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#2G00RYVPL") {
-          console.log("leaderFound");
           player = item.name;
         }
         return player;
@@ -39,7 +35,13 @@ const Founding = ({ data }) => {
       color: "#FFB703",
       image: "./images/Ajeet.jpg",
       profile: "./images/ajeetprofile.jpg",
-      name: "King Leo",
+      name: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.name;
+        }
+        return player;
+      }),
       name2: "Ajeet (King Leo)",
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=92QPQVCLQ",
       character: [
@@ -55,7 +57,13 @@ const Founding = ({ data }) => {
       image: "./images/naveenProfile.png",
       profile: "./images/naveenProfile.jpg",
       name: "Naveen",
-      name2: "Naveen (Bhole Baba Ki Jai)",
+      name2: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.name;
+        }
+        return player;
+      }),
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=9U0QY8LJR",
       character: [
         "Your resourcefulness and resilience keep us strong and united.",
@@ -69,7 +77,14 @@ const Founding = ({ data }) => {
       color: "#FFB703",
       image: "./images/image5.webp",
       profile: "./images/Storm.jpg",
-      name: "Sahil",
+      name: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.name;
+        }
+        return player;
+      }),
+
       name2: "Sahil (Storm)",
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=2VPYPGLJ9",
       character: [
@@ -85,8 +100,14 @@ const Founding = ({ data }) => {
       image: "./images/ashish.jpg",
       profile: "./images/ashishprofile.jpg",
       name: "Ashish",
-      name2: "Ashish (ASH)",
-      link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=9GQ08JJQC",
+      name2: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.name;
+        }
+        return player;
+      }),
+      link: `https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=9GQ08JJQC`,
       character: [
         "Ash nibba is a rare ore that our clan has,many gem seeker looks for him ",
         "Your teamwork and loyalty make our clan a force to be reckoned with!",
@@ -103,6 +124,7 @@ const Founding = ({ data }) => {
       {pillars.map((item) => {
         return (
           <Pillars
+            data={data}
             key={item.name}
             color={item.color}
             image={item.image}

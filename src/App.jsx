@@ -25,7 +25,7 @@ const App = () => {
   const [lastFetchedData, setLastFetchedData] = useState(null);
 
   const fetchData = useCallback(async () => {
-    console.log("req send to server")
+    console.log("req send to server");
     try {
       const response = await fetch("http://localhost:3000/api/clash-of-clans");
       const jsonData = await response.json();
@@ -106,7 +106,7 @@ const App = () => {
             <Route path="/pillars" element={<Founding data={clanData} />} />
             <Route path="/logs" element={<Log data={clanData} />} />
             <Route path="/team" element={<TeamMembers data={clanData} />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About data={clanData} />} />
           </Routes>
 
           <Footer />

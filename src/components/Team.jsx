@@ -4,7 +4,6 @@ import TeamGrid from "./TeamGrid";
 import TeamPlayet from "./TeamPlayet";
 
 const TeamMembers = ({ data }) => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -27,7 +26,7 @@ const TeamMembers = ({ data }) => {
               </div>
               <div className=" rounded-lg w-[20em] team-card2 bg-[#FFC100]  flex justify-center  ">
                 <h2 className="font-[cursive] text-[2rem]   transition-all duration-200 text-black font-semibold">
-               {data.name}
+                  {data.name}
                 </h2>
               </div>
             </div>
@@ -40,13 +39,13 @@ const TeamMembers = ({ data }) => {
           </div>
           <div className="flex  col-span-12 row-span-1 justify-center items-center ">
             <p className="bg-black text-white rounded-md h-[75%] px-3 py-2 hover:bg-zinc-700 team-card2  transition-all duration-200 ease-linear ">
-              we are a team of  {data.memberList.length}
+              we are a team of {data.memberList.length}
             </p>
           </div>
         </div>
       </div>
       {/* <TeamGrid /> */}
-      <div className="grid grid-cols-4 gap-2 p-2 bg-yellow-500 flex-col w-full "> 
+      <div className="grid grid-cols-4 h-auto gap-2 p-2 bg-yellow-500 flex-col w-full ">
         {data.memberList.map((item) => {
           return <TeamPlayet key={Math.random()} item={item} data={data} />;
         })}

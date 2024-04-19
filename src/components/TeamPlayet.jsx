@@ -6,7 +6,7 @@ const TeamPlayet = ({ data, item }) => {
     <>
       <div
         key={Math.random()}
-        className="bg-gradient-to-r team-card hover:scale-[1.01]  transition-all duration-300 ease-in-out col-span-1 h-[55vh] w-[22vw] border-white  border-2  from-blue-500 to-zinc-400 shadow-lg rounded-lg p-7  font-mono max-w-md mx-auto text-white"
+        className="bg-gradient-to-r team-card hover:scale-[1.01]  transition-all duration-300 ease-in-out col-span-1 h-[60vh] w-[22vw] border-white  border-2  from-blue-500 to-zinc-400 shadow-lg rounded-lg p-7  font-mono max-w-md mx-auto text-white"
       >
         <div className="flex items-center mb-4">
           <span className="text-xl font-semibold">

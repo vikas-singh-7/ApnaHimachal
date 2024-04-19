@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 import LogChild from "./LogChild";
+import About1 from "./About1";
 
-const About = () => {
+const About = ({ data }) => {
   const details = [
     {
       logo: "./images/pekka.webp",
-      details: [
+      detail: [
         "HTML",
         "Css",
         "javaScript",
@@ -27,25 +28,26 @@ const About = () => {
       <Navbar />
       {details.map((item) => {
         return (
-          <LogChild
+          <About1
             key={Math.random()}
+            data={data}
             logo={item.logo}
-            image={item.image}
-            details={item.details}
+            details={item.detail}
           />
         );
       })}
-      <div className="h-[15vh] bg-[#1F7AEB] p-2 flex justify-around items-center">
-        <a
-          href="https://github.com/vikas-singh-7/ApnaHimachal"
-          className="w-[30%] h-[100%] hover:cursor-pointer hover:bg-slate-200  bg-white flex justify-center items-center rounded-md "
-          target="blank"
-        >
-          <div>
-            <h2 className="text-xl font-mono">View Source Code</h2>
-          </div>
-        </a>
-        <div className="">
+      <div className="h-[15vh] w-[100%] bg-[#1F7AEB]  flex items-center justify-around">
+        <div className="h-[15vh] w-[40%]  p-2 flex justify-around items-center">
+          <a
+            href="https://github.com/vikas-singh-7/ApnaHimachal"
+            className="hover:cursor-pointer h-[95%] w-[70%] hover:bg-slate-200  bg-white flex justify-center items-center rounded-md text-black"
+            target="blank"
+          >
+            <h2 className="text-[2em] font-mono ">View Source Code</h2>
+          </a>
+        </div>
+
+        <div className="w-[50%] ">
           <h3 className="text-xl font-mono text-white font-semibold">
             Feel Free To Make Out Your Modifications and Contributions :)
           </h3>
@@ -54,18 +56,18 @@ const About = () => {
       <div className="h-[70vh] bg-yellow-500 p-2 flex justify-center items-center">
         <div className="h-[100%] w-[100%] grid gap-2 rounded-md  grid-cols-12 grid-rows-12">
           <div className="col-span-6 row-span-12 flex justify-center items-center">
-            <div className="h-[80%] w-[80%]  border-2 rounded-md border-black p-10">
-              <div className="  h-auto">
-                <h2 className="text-violet-500 text-xl font-mono font-semibold">
+            <div className="h-[80%] w-[80%]  border-2 rounded-md border-black p-8">
+              <div className="h-[30%] flex flex-col ">
+                <h2 className="text-violet-500 text-[1.8em] font-mono font-semibold">
                   About Me
                 </h2>
-                <h3 className="text-xl text-zinc-600 font-semibold font-mono">
+                <h3 className="text-xl mt-4 text-[1.5em] text-zinc-600 font-semibold font-[cursive]">
                   Vikas Singh,FrontEnd Engineer
                 </h3>
               </div>
-              <div className="  h-[50%] justify-center items-center  font-mono font-semibold flex">
-                <h3>
-                  A Noob FrontEnd Enginner Who hate and love to code,I holds
+              <div className="h-[40%]  justify-center items-center  font-mono font-semibold flex">
+                <h3 className="text-[1.3em]">
+                  A Noob FrontEnd Enginner Who hate and love to code,I hold
                   Graduation Degree in Computer Science ,I would say (Covid
                   Graduation )💀
                 </h3>
