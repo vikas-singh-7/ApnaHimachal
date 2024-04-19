@@ -2,6 +2,7 @@ import React from "react";
 import DetailCompo from "./DetailCompo";
 import { useNavigate } from "react-router-dom";
 
+
 const DetailBox = () => {
   const navigate = useNavigate();
   const details = [
@@ -40,7 +41,7 @@ const DetailBox = () => {
                 navigate(item.navigation);
               }}
               key={Math.random()}
-              className="row-span-4 col-span-6 hover:cursor-pointer hover:scale-[1.02] transition-all ease-linear duration-75 p-2"
+              className="row-span-4 .inner-content:hover col-span-6 hover:cursor-pointer hover:scale-[1.02] transition-all ease-linear duration-75 p-2 "
             >
               <DetailCompo
                 image={item.image}

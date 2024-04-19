@@ -1,0 +1,8 @@
+.inner-content:hover {
+    box-shadow: 
+      0 10px 30px rgba(0, 123, 255, 0.5), /* Cool blue shadow */
+      0 10px 30px rgba(0, 255, 204, 0.5), /* Cool teal shadow */
+      0 10px 30px rgba(153, 0, 255, 0.5); /* Cool purple shadow */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  

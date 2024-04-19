@@ -4,7 +4,7 @@ import TeamGrid from "./TeamGrid";
 import TeamPlayet from "./TeamPlayet";
 
 const TeamMembers = ({ data }) => {
-  console.log(data.memberList.length);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -17,17 +17,17 @@ const TeamMembers = ({ data }) => {
             <img
               src="./images/teamlast.jpg"
               alt=""
-              className=" hover:scale-105 transition-all duration-150 ease-linear"
+              className="  transition-all duration-150 ease-linear"
             />
           </div>
           <div className="row-span-9 border-[2px] border-black col-span-5 rounded-md bg-violet-500 overflow-hidden flex p-2 flex-col items-center">
-            <div className="h-full hover:scale-105 transition-all duration-150 ease-linear w-full flex flex-col justify-center items-center">
+            <div className="h-full  transition-all duration-150 ease-linear w-full flex flex-col justify-center items-center">
               <div className="h-[60%] w-[40%] rounded-md flex justify-center items-center">
                 <img src={data.badgeUrls.large} alt="" />
               </div>
-              <div className="h-[40%] flex justify-center  w-full">
-                <h2 className="font-[cursive] text-[2rem] text-white font-semibold">
-                  Apna Himachal
+              <div className=" rounded-lg w-[20em] team-card2 bg-[#FFC100]  flex justify-center  ">
+                <h2 className="font-[cursive] text-[2rem]   transition-all duration-200 text-black font-semibold">
+               {data.name}
                 </h2>
               </div>
             </div>
@@ -39,14 +39,14 @@ const TeamMembers = ({ data }) => {
             </h3>
           </div>
           <div className="flex  col-span-12 row-span-1 justify-center items-center ">
-            <p className="bg-black text-white rounded-md h-[75%] px-3 py-2 hover:bg-zinc-700  transition-all duration-150 ease-linear ">
-              we are super {data.memberList.length}
+            <p className="bg-black text-white rounded-md h-[75%] px-3 py-2 hover:bg-zinc-700 team-card2  transition-all duration-200 ease-linear ">
+              we are a team of  {data.memberList.length}
             </p>
           </div>
         </div>
       </div>
       {/* <TeamGrid /> */}
-      <div className="grid grid-cols-4 gap-3 p-2 bg-yellow-500 flex-col w-full ">
+      <div className="grid grid-cols-4 gap-2 p-2 bg-yellow-500 flex-col w-full "> 
         {data.memberList.map((item) => {
           return <TeamPlayet key={Math.random()} item={item} data={data} />;
         })}

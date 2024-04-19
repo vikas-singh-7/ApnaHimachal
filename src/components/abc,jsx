@@ -1,0 +1,6 @@
+ <div className="row-span-1 bg-[#617092] rounded-md flex justify-center items-center gap-2 ">
+            <div className="border-2 border-white h-[82%] hover:scale-[1.02] transition-all duration-200 ease-linear w-[32%] rounded-md bg-[url('./images/js.png')] bg-cover bg-center"></div>
+            <div className="border-2 border-white h-[82%] hover:scale-[1.02] transition-all duration-300 ease-linear w-[32%] rounded-md bg-[url('./images/react.webp')] bg-cover bg-center"></div>
+            <div className="border-2 border-white h-[82%] hover:scale-[1.02] transition-all duration-300 ease-linear w-[32%] rounded-md bg-[url('./images/nodejs.webp')] bg-cover bg-center"></div>
+
+          </div>

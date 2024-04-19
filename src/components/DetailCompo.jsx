@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./Hero.css"; // Import the CSS file
 const DetailCompo = ({ image, para1, para2 }) => {
   return (
-    <div className="h-[70vh]  w-auto rounded-md border-2  overflow-hidden ">
+    <div className="h-[70vh] inner-content  w-auto rounded-md border-2  overflow-hidden ">
       <div
         style={{ backgroundImage: `url(${image})` }}
         className={`bg-[url(${image})] bg-cover bg-center h-[80%] w-full`}

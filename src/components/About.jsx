@@ -9,14 +9,17 @@ const About = () => {
       details: [
         "HTML",
         "Css",
+        "javaScript",
         "ReactJs",
+        "express",
+        "nodeJs",
         "TailwindCss",
         "React Router Dom",
         "React Icons",
         "Vite",
         "Locomotive Scroll",
+        "Coc API",
       ],
-      image: "./images/tech1.png",
     },
   ];
   return (
@@ -35,7 +38,7 @@ const About = () => {
       <div className="h-[15vh] bg-[#1F7AEB] p-2 flex justify-around items-center">
         <a
           href="https://github.com/vikas-singh-7/ApnaHimachal"
-          className="w-[30%] h-[100%] hover:cursor-pointer hover:bg-slate-300  bg-white flex justify-center items-center rounded-md "
+          className="w-[30%] h-[100%] hover:cursor-pointer hover:bg-slate-200  bg-white flex justify-center items-center rounded-md "
           target="blank"
         >
           <div>
