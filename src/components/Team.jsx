@@ -24,8 +24,8 @@ const TeamMembers = ({ data }) => {
               <div className="h-[60%] w-[40%] rounded-md flex justify-center items-center">
                 <img src={data.badgeUrls.large} alt="" />
               </div>
-              <div className=" rounded-lg w-[20em] team-card2 bg-[#FFC100]  flex justify-center  ">
-                <h2 className="font-[cursive] text-[2rem]   transition-all duration-200 text-black font-semibold">
+              <div className=" rounded-lg w-[15em]    flex justify-center  ">
+                <h2 className="font-[cursive] text-[2rem] team-card2  transition-all duration-200 text-black font-semibold  leading-none">
                   {data.name}
                 </h2>
               </div>
@@ -45,7 +45,7 @@ const TeamMembers = ({ data }) => {
         </div>
       </div>
       {/* <TeamGrid /> */}
-      <div className="grid grid-cols-4 h-auto gap-2 p-2 bg-yellow-500 flex-col w-full ">
+      <div className=" h-auto gap-2 p-2 grid grid-cols-12   bg-yellow-500  w-[100%] ">
         {data.memberList.map((item) => {
           return <TeamPlayet key={Math.random()} item={item} data={data} />;
         })}

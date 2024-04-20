@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import LogChild from "./LogChild";
+
 import About1 from "./About1";
 
 const About = ({ data }) => {
@@ -55,8 +55,8 @@ const About = ({ data }) => {
       </div>
       <div className="h-[70vh] bg-yellow-500 p-2 flex justify-center items-center">
         <div className="h-[100%] w-[100%] grid gap-2 rounded-md  grid-cols-12 grid-rows-12">
-          <div className="col-span-6 row-span-12 flex justify-center items-center">
-            <div className="h-[80%] w-[80%]  border-2 rounded-md border-black p-8">
+          <div className="col-span-6 row-span-12 flex justify-center items-center ">
+            <div className="h-[90%] w-[90%]  border-2 rounded-md border-black p-2 ">
               <div className="h-[30%] flex flex-col ">
                 <h2 className="text-violet-500 text-[1.8em] font-mono font-semibold">
                   About Me

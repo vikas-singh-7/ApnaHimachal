@@ -25,10 +25,6 @@ const Log = ({ data }) => {
       details: [
         `Our clan's war log showcases our journey in ${data.warLeague.name}, reflecting our strategic prowess and dedication.`,
         "Our log reveals an active and engaged clan, with high participation rates in wars and other clan activities.",
-
-        "Our clan's teamwork and communication are highlighted in the war log, making us a formidable force in every battle.",
-        "Teamwork: Our clan works together with strong coordination and strategy.",
-
         `Our war log paints a picture of a clan that is dedicated to growth, excellence, and triumph in ${data.warLeague.name}.`,
       ],
       image: "./images/war2.jpg",
@@ -49,6 +45,7 @@ const Log = ({ data }) => {
           />
         ) : (
           <Log2
+            data={data}
             key={Math.random()}
             image={item.image}
             logo={item.logo}

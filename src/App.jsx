@@ -14,6 +14,7 @@ import { useState } from "react";
 
 import TeamMembers from "./components/Team";
 import About from "./components/About";
+import { data } from "autoprefixer";
 
 const App = () => {
   useEffect(() => {
@@ -44,7 +45,7 @@ const App = () => {
     fetchData();
 
     // Set up polling to fetch data every 10 seconds
-    const intervalId = setInterval(fetchData, 10000);
+    const intervalId = setInterval(fetchData, 10000000);
 
     // Cleanup interval when component unmounts
     return () => {
@@ -57,6 +58,7 @@ const App = () => {
     // Perform computations here if needed
     return clanData;
   }, [clanData]);
+
   // useEffect(() => {
   //   console.log("req sent to server")
   //   // Define the URL for the endpoint you created in your Node.js server
@@ -80,6 +82,7 @@ const App = () => {
   //       console.error("Error fetching data from server:", error);
   //     });
   // }, []);
+  console.log(clanData);
   if (!renderedData) {
     return (
       <div>

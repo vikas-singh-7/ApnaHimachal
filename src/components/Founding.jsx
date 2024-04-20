@@ -11,9 +11,50 @@ const Founding = ({ data }) => {
 
   const pillars = [
     {
+      ExpLevel: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.expLevel;
+        }
+        return player;
+      }),
+      donationsR: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.donationsReceived;
+        }
+        return player;
+      }),
+      donations: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.donations;
+        }
+        return player;
+      }),
+      trophies: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.trophies;
+        }
+        return player;
+      }),
+      townhall: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.townHallLevel;
+        }
+        return player;
+      }),
       color: "#1F7AEB",
       image: "./images/king1.webp",
-      profile: "./images/leader.jpg",
+      profile: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.league.iconUrls.medium;
+        }
+        return player;
+      }),
       name: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#2G00RYVPL") {
@@ -21,7 +62,14 @@ const Founding = ({ data }) => {
         }
         return player;
       }),
-      name2: "Sonu Desi (Heer Da Ranjha)",
+
+      role: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.role;
+        }
+        return player;
+      }),
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=2G00RYVPL",
       character: [
         "Tactical Genius: Your strategic foresight leads us to victory time and time again.",
@@ -29,12 +77,52 @@ const Founding = ({ data }) => {
         "  Team Builder: You've created a clan of unity and strength,where each member feels valued.",
         "Resourceful Planner: Your resource management and planning skills keep our clan thriving.",
       ],
-      role: "Leader",
     },
     {
+      ExpLevel: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.expLevel;
+        }
+        return player;
+      }),
+      donationsR: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.donationsReceived;
+        }
+        return player;
+      }),
+      donations: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.donations;
+        }
+        return player;
+      }),
+      trophies: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.trophies;
+        }
+        return player;
+      }),
+      townhall: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.townHallLevel;
+        }
+        return player;
+      }),
       color: "#FFB703",
       image: "./images/Ajeet.jpg",
-      profile: "./images/ajeetprofile.jpg",
+      profile: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.league.iconUrls.medium;
+        }
+        return player;
+      }),
       name: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#92QPQVCLQ") {
@@ -42,7 +130,14 @@ const Founding = ({ data }) => {
         }
         return player;
       }),
-      name2: "Ajeet (King Leo)",
+      role: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.role;
+        }
+        return player;
+      }),
+
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=92QPQVCLQ",
       character: [
         "Your strategic insights elevate our clan to new heights!",
@@ -50,20 +145,68 @@ const Founding = ({ data }) => {
         "Your leadership inspires us all to give our best in every battle.",
         "You bring out the best in every member of the clan—thank you for your guidance.",
       ],
-      role: "Co-Leader",
     },
     {
-      color: "#7B8EB5",
+      ExpLevel: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.expLevel;
+        }
+        return player;
+      }),
+      donationsR: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.donationsReceived;
+        }
+        return player;
+      }),
+      donations: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.donations;
+        }
+        return player;
+      }),
+      trophies: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.trophies;
+        }
+        return player;
+      }),
+      townhall: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.townHallLevel;
+        }
+        return player;
+      }),
+      color: "#1F7AEB",
       image: "./images/naveenProfile.png",
-      profile: "./images/naveenProfile.jpg",
-      name: "Naveen",
-      name2: data.memberList.map((item, index) => {
+      profile: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.league.iconUrls.medium;
+        }
+        return player;
+      }),
+
+      name: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#9U0QY8LJR") {
           player = item.name;
         }
         return player;
       }),
+      role: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.role;
+        }
+        return player;
+      }),
+
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=9U0QY8LJR",
       character: [
         "Your resourcefulness and resilience keep us strong and united.",
@@ -71,12 +214,52 @@ const Founding = ({ data }) => {
         "Your commitment to the clan is truly admirable—thank you for everything!",
         "Your support and wisdom make us all better players and team members.",
       ],
-      role: "Co-Leader",
     },
     {
+      ExpLevel: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.expLevel;
+        }
+        return player;
+      }),
+      donationsR: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.donationsReceived;
+        }
+        return player;
+      }),
+      donations: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.donations;
+        }
+        return player;
+      }),
+      trophies: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.trophies;
+        }
+        return player;
+      }),
+      townhall: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.townHallLevel;
+        }
+        return player;
+      }),
       color: "#FFB703",
       image: "./images/image5.webp",
-      profile: "./images/Storm.jpg",
+      profile: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.league.expLevel;
+        }
+        return player;
+      }),
       name: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#2VPYPGLJ9") {
@@ -84,8 +267,13 @@ const Founding = ({ data }) => {
         }
         return player;
       }),
-
-      name2: "Sahil (Storm)",
+      role: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.role;
+        }
+        return player;
+      }),
       link: "https://link.clashofclans.com/en?action=OpenPlayerProfile&tag=2VPYPGLJ9",
       character: [
         "You,ve been the backbone of this Clan from the start, thank you for your loyalty and hard work!",
@@ -93,17 +281,66 @@ const Founding = ({ data }) => {
         "Your dedication and leadership have made our Clan stronger thank you for being such an integral part of our journey!",
         "You're not just a founding member, you're the heart and soul of our Clan thank you for everything you do!",
       ],
-      role: "Co-Leader",
     },
     {
+      ExpLevel: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.expLevel;
+        }
+        return player;
+      }),
+      donationsR: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.donationsReceived;
+        }
+        return player;
+      }),
+      donations: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.donations;
+        }
+        return player;
+      }),
+      trophies: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.trophies;
+        }
+        return player;
+      }),
+      townhall: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.townHallLevel;
+        }
+        return player;
+      }),
       color: "#003A96",
       image: "./images/ashish.jpg",
-      profile: "./images/ashishprofile.jpg",
-      name: "Ashish",
-      name2: data.memberList.map((item, index) => {
+      profile: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.league.iconUrls.medium;
+          console.log(player);
+        }
+        return player;
+      }),
+
+      name: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#9GQ08JJQC") {
           player = item.name;
+          console.log(player);
+        }
+        return player;
+      }),
+      role: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "##9GQ08JJQC") {
+          player = item.role;
         }
         return player;
       }),
@@ -114,7 +351,6 @@ const Founding = ({ data }) => {
         "Your commitment to the clan is truly admirable—thank you for everything!",
         "Your dedication is unmatched—thank you for making our clan the best it can be!",
       ],
-      role: "Co-Leader",
     },
   ];
   return (
@@ -124,16 +360,19 @@ const Founding = ({ data }) => {
       {pillars.map((item) => {
         return (
           <Pillars
-            data={data}
+            townHallLevel={item.townhall}
             key={item.name}
             color={item.color}
             image={item.image}
             name={item.name}
-            name2={item.name2}
             profile={item.profile}
             character={item.character}
             role={item.role}
             link={item.link}
+            trophies={item.trophies}
+            xp={item.ExpLevel}
+            donation={item.donations}
+            donationr={item.donationsR}
           />
         );
       })}
