@@ -14,7 +14,7 @@ import { useState } from "react";
 
 import TeamMembers from "./components/Team";
 import About from "./components/About";
-import { data } from "autoprefixer";
+
 
 const App = () => {
   useEffect(() => {
@@ -45,7 +45,7 @@ const App = () => {
     fetchData();
 
     // Set up polling to fetch data every 10 seconds
-    const intervalId = setInterval(fetchData, 10000000);
+    const intervalId = setInterval(fetchData, 12000);
 
     // Cleanup interval when component unmounts
     return () => {

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
-import TeamGrid from "./TeamGrid";
 import TeamPlayet from "./TeamPlayet";
 
 const TeamMembers = ({ data }) => {
@@ -44,7 +43,7 @@ const TeamMembers = ({ data }) => {
           </div>
         </div>
       </div>
-      {/* <TeamGrid /> */}
+      
       <div className=" h-auto gap-2 p-2 grid grid-cols-12   bg-yellow-500  w-[100%] ">
         {data.memberList.map((item) => {
           return <TeamPlayet key={Math.random()} item={item} data={data} />;
