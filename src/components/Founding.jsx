@@ -4,13 +4,19 @@ import { useEffect } from "react";
 import Navbar from "./Navbar";
 
 const Founding = ({ data }) => {
-  console.log(data);
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
   }, []);
 
   const pillars = [
     {
+      tag: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2G00RYVPL") {
+          player = item.tag;
+        }
+        return player;
+      }),
       ExpLevel: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#2G00RYVPL") {
@@ -79,6 +85,13 @@ const Founding = ({ data }) => {
       ],
     },
     {
+      tag: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#92QPQVCLQ") {
+          player = item.tag;
+        }
+        return player;
+      }),
       ExpLevel: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#92QPQVCLQ") {
@@ -147,6 +160,13 @@ const Founding = ({ data }) => {
       ],
     },
     {
+      tag: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9U0QY8LJR") {
+          player = item.tag;
+        }
+        return player;
+      }),
       ExpLevel: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#9U0QY8LJR") {
@@ -216,6 +236,13 @@ const Founding = ({ data }) => {
       ],
     },
     {
+      tag: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#2VPYPGLJ9") {
+          player = item.tag;
+        }
+        return player;
+      }),
       ExpLevel: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#2VPYPGLJ9") {
@@ -337,9 +364,16 @@ const Founding = ({ data }) => {
         }
         return player;
       }),
+      tag: data.memberList.map((item, index) => {
+        let player;
+        if (item.tag == "#9GQ08JJQC") {
+          player = item.tag;
+        }
+        return player;
+      }),
       role: data.memberList.map((item, index) => {
         let player;
-        if (item.tag == "##9GQ08JJQC") {
+        if (item.tag == "#9GQ08JJQC") {
           player = item.role;
         }
         return player;
@@ -360,6 +394,7 @@ const Founding = ({ data }) => {
       {pillars.map((item) => {
         return (
           <Pillars
+           
             townHallLevel={item.townhall}
             key={item.name}
             color={item.color}

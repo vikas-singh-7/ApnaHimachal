@@ -15,7 +15,6 @@ import { useState } from "react";
 import TeamMembers from "./components/Team";
 import About from "./components/About";
 
-
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,7 +27,7 @@ const App = () => {
   const fetchData = useCallback(async () => {
     console.log("req send to server");
     try {
-      const response = await fetch("http://localhost:3000/api/clash-of-clans");
+      const response = await fetch("https://render-u0y2.onrender.com/");
       const jsonData = await response.json();
 
       // Compare new data with the current data
@@ -86,7 +85,7 @@ const App = () => {
   if (!renderedData) {
     return (
       <div>
-        <div className="h-screen bg-blue-500 text-white font-mono font-semibold flex justify-center items-center text-[4rem]">
+        <div className="h-screen bg-blue-500 text-white font-mono font-semibold text-center justify-center items-center text-[4rem]">
           Loading Please Wait.....
         </div>
       </div>
@@ -112,7 +111,7 @@ const App = () => {
             <Route path="/about" element={<About data={clanData} />} />
           </Routes>
 
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </>
     );

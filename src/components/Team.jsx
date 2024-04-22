@@ -11,14 +11,14 @@ const TeamMembers = ({ data }) => {
       <Navbar />
       <div className="h-screen bg-[#1F7AEB] ">
         <div className="grid p-1  gap-2 grid-rows-12 grid-cols-12 h-[100vh] ">
-          <div className="row-span-9 overflow-hidden flex border-[2px] rounded-md col-span-7 ">
+          <div className="row-span-9  overflow-hidden flex border-[2px] rounded-md col-span-7 ">
             <img
-              src="./images/teamlast.jpg"
+              src="./images/detail1.png"
               alt=""
-              className="  transition-all duration-150 ease-linear"
+             className="h-full w-full"
             />
           </div>
-          <div className="row-span-9 border-[2px] border-black col-span-5 rounded-md bg-violet-500 overflow-hidden flex p-2 flex-col items-center">
+          <div className="row-span-9 border-[2px] border-black col-span-5 rounded-md bg-[#FFB703] overflow-hidden flex p-2 flex-col items-center">
             <div className="h-full  transition-all duration-150 ease-linear w-full flex flex-col justify-center items-center">
               <div className="h-[60%] w-[40%] rounded-md flex justify-center items-center">
                 <img src={data.badgeUrls.large} alt="" />

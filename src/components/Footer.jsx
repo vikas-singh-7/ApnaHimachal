@@ -93,7 +93,7 @@ const Footer = () => {
               >
                 <div
                   className="  border-y-[1px]  bg-cover bg-center h-full w-full rounded-md"
-                  style={{ backgroundImage: "url('./images/appstore.webp')" }}
+                  style={{ backgroundImage: "url('./images/appstore.png')" }}
                 ></div>
               </a>
             </div>
@@ -104,7 +104,7 @@ const Footer = () => {
               >
                 <div
                   className="  border-y-[1px] bg-cover bg-center h-full w-full rounded-md "
-                  style={{ backgroundImage: "url('./images/playstore.webp')" }}
+                  style={{ backgroundImage: "url('./images/playstore.png')" }}
                 ></div>
               </a>
             </div>

@@ -6,7 +6,7 @@ import About1 from "./About1";
 const About = ({ data }) => {
   const details = [
     {
-      logo: "./images/pekka.webp",
+      logo: "./images/pekka.png",
       detail: [
         "HTML",
         "Css",
@@ -20,6 +20,7 @@ const About = ({ data }) => {
         "Vite",
         "Locomotive Scroll",
         "Coc API",
+        "render cloud"
       ],
     },
   ];
@@ -86,7 +87,7 @@ const About = ({ data }) => {
           </div>
           <div className="col-span-6 row-span-12 flex justify-center items-center  ">
             <div className="h-[100%] flex justify-center  w-[100%] rounded-md  bg-cover bg-center ">
-              <img src="./images/Girl.webp" alt="" />
+              <img src="./images/Girl.png" alt="" />
             </div>
           </div>
         </div>

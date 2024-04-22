@@ -5,8 +5,8 @@ const PekkaBox = () => {
     <div className="h-[100vh] bg-[#1F7AEB] flex gap-2 justify-center items-center">
       <div
         className="image h-full w-full  bg-cover bg-center "
-        style={{ backgroundImage: "url('./images/pekka.webp')" }}
-      ></div>
+        
+      ><img src="./images/pekka.png" alt="" /></div>
 
       <div className="image h-full w-full  bg-cover bg-center flex flex-col justify-start ">
         <div className="heading  h-[15%]   mt-16">

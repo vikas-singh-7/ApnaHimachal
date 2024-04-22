@@ -14,8 +14,6 @@ const Pillars = ({
   link,
   character,
 }) => {
-  console.log(profile);
-
   return (
     <>
       <div
@@ -85,6 +83,15 @@ const Pillars = ({
                   <span className="text-lg h-[20%] flex items-center">
                     troops Received:{donationr}
                   </span>
+                </div>
+                <div className="flex h-[15%] ">
+                  <a
+                    href={link}
+                    target="blank"
+                    className="bg-zinc-900 h-full justify-center items-center w-[45%] hover:bg-zinc-700 rounded-md flex uppercase"
+                  >
+                    connect
+                  </a>
                 </div>
               </div>
             </div>
