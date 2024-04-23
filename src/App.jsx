@@ -14,6 +14,7 @@ import { useState } from "react";
 
 import TeamMembers from "./components/Team";
 import About from "./components/About";
+import Eyes from "./Eyes";
 
 const App = () => {
   useEffect(() => {
@@ -84,11 +85,9 @@ const App = () => {
   console.log(clanData);
   if (!renderedData) {
     return (
-      <div>
-        <div className="h-screen bg-blue-500 text-white font-mono font-semibold text-center justify-center items-center text-[4rem]">
-          Loading Please Wait.....
-        </div>
-      </div>
+      <>
+      <Eyes className="max-sm:hidden"/>
+      </>
     );
   } else {
     return (
@@ -111,7 +110,7 @@ const App = () => {
             <Route path="/about" element={<About data={clanData} />} />
           </Routes>
 
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </>
     );
