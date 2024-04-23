@@ -4,7 +4,7 @@ const Hero = ({ data }) => {
   return (
     <div
       className="md:h-[80vh] w-full  max-sm:h-[80vh] max-sm:bg-blue-500 max-sm:text-white   bg-center bg-cover relative md:bg-[url('./images/heroImage.webp')]"
-      // style={{ backgroundImage: "url('./images/heroImage.webp')" }}
+      style={{ backgroundImage: "url('./images/heroImage.webp')" }}
     >
       <div className="max-sm:h-[30%] bg-red-500 max-sm:w-[100%] md:hidden md:w-[100%]   rounded-md p-2">
         <img src={data.badgeUrls.medium} alt="" />

@@ -9,7 +9,7 @@ const LogChild = ({ image, details, logo, data }) => {
         </div>
         <div className="col-span-1 border-2   gap-5 rounded-md grid p-2 grid-cols-1 grid-rows-12 ">
           <div className="row-span-2 flex rounded-md  justify-start  items-center ">
-            <div className=" h-[100%] p-1 flex  items-center w-[60%] ">
+            <div className="  p-1 flex  items-center w-[60%] ">
               <h2 className="font-mono   text-white font-semibold text-[1.2em]">
                 War Logs And Details
               </h2>

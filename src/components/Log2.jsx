@@ -6,9 +6,9 @@ const Log2 = ({ image, details, logo, data }) => {
     <div className="h-auto">
       <div className="h-[100vh] bg-[#FFB703] grid gap-2 grid-cols-2 grid-rows-1 p-5">
         <div className="col-span-1 border-2 border-black  gap-5 rounded-md grid p-2 grid-cols-1 grid-rows-2">
-          <div className="row-span-1  font-semibold font-mono px-5 flex justify-center items-center ">
+          <div className="  font-semibold font-mono px-5 flex justify-center items-center ">
             <div className="h-full w-full ">
-              <ol className=" list-outside list-disc text-[1.16em]">
+              <ol className=" list-outside list-disc text-lg">
                 <li> Clan Level :{data.clanLevel}</li>
                 <li>
                   {" "}
