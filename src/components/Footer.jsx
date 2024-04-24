@@ -61,21 +61,21 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="h-[70vh] bg-[#000000] p-4 flex justify-center items-center">
-      <div className="h-[90%] w-[80%]  flex flex-col ">
-        <div className="h-[30%] w-full flex items-center justify-center ">
-          <div className="h-[80%] w-[50%]">
+    <div className="md:h-[70vh] bg-[#000000] md:p-4 max-sm:p-2 md:flex max-sm:flex-col justify-center items-center">
+      <div className="md:h-[90%] md:w-[80%]  flex flex-col ">
+        <div className="md:h-[30%] md:w-full flex items-center md:justify-center ">
+          <div className="md:h-[80%] md:w-[50%]">
             <div className="py-2">
-              <p className="text-white tracking-tight font-sm font-mono">
+              <p className="text-white tracking-tight md:font-sm  max-sm:text-[1.4em] font-mono">
                 Connect with me{" "}
               </p>
             </div>
-            <div className="flex justify-between  w-[60%] ">
+            <div className="flex md:justify-between   md:w-[60%] ">
               {follow.map((item) => {
                 return (
                   <div
                     key={Math.random()}
-                    className="h-[3rem] rounded-md transition-all duration-150 ease-linear hover:bg-zinc-700 flex justify-start  w-[3rem] p-2"
+                    className="md:h-[3em] rounded-md transition-all duration-150 ease-linear hover:bg-zinc-700 flex justify-start  w-[3rem] p-2"
                   >
                     <a target="blank" href={item.link} className="flex">
                       <img src={item.image} alt="" />
@@ -85,8 +85,8 @@ const Footer = () => {
               })}
             </div>
           </div>
-          <div className=" h-[80%] w-[50%] flex gap-2 p-2 justify-center items-center">
-            <div className="h-[90%]  w-full px-4 py-[2px]  ">
+          <div className="max-sm:hidden max-sm:bg-red-500 md:h-[80%] md:w-[50%] md:flex gap-2 p-2 justify-center items-center ">
+            <div className="md:h-[90%]  md:w-full px-4 py-[2px]  ">
               <a
                 target="blank"
                 href="https://apps.apple.com/us/developer/supercell/id488106216"
@@ -111,34 +111,35 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-[1px] border-zinc-600 mt-2 "></div>
-        <div className="flex justify-between items-center h-[10%] ">
+        <div className="flex max-sm:flex-col  max-sm:justify-start max-sm:items-start md:justify-between  items-center md:h-[10%] ">
           {links.map((item) => {
             return (
               <a
                 key={Math.random()}
                 target="blank"
                 href={item.link}
-                className="tracking-tighter hover:text-white text-zinc-300 font-mono text-sm"
+                className="tracking-tighter hover:text-white text-zinc-300 font-mono md:text-sm"
               >
                 {item.name}
               </a>
             );
           })}
         </div>
+        <div className=" md:hidden border-[1px] border-zinc-600 mt-2 "></div>
         <div className="h-[40%]  flex justify-center items-center">
           <div className="h-[80%] w-[100%] flex gap-2">
             <div className="h-[90%] w-full  flex flex-col justify-start">
               {address.map((item) => (
                 <p
                   key={Math.random()}
-                  className="text-sm text-zinc-300 hover:text-zinc-100 tracking-tight "
+                  className="md:text-sm text-zinc-300 hover:text-zinc-100 tracking-tight "
                 >
                   {item}
                 </p>
               ))}
             </div>
-            <div className="h-[90%] w-full  flex justify-end items-center">
-              <div className="h-[100%] w-[25%]  flex justify-center items-center p-5">
+            <div className="md:h-[90%] md:w-full  flex justify-end items-center">
+              <div className="md:h-[100%] md:w-[25%]  flex justify-center items-center p-5">
                 <img src="./images/logo.webp" alt="" />
               </div>
             </div>

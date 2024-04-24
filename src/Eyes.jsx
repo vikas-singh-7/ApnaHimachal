@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Eyes = ({ image }) => {
   const [rotateLeft, setRotateLeft] = useState(0);
   const [rotateRight, setRotateRight] = useState(0);
-  const [timer, setTimer] = useState(55); // Initial timer value
+  const [timer, setTimer] = useState(60); // Initial timer value
 
   useEffect(() => {
     const handleMove = (e) => {

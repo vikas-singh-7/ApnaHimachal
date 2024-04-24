@@ -92,7 +92,7 @@ const App = () => {
   } else {
     return (
       <>
-        <div className="h-auto w-full">
+        <div className=" bg-blue-500">
           <Routes>
             <Route
               path="/"

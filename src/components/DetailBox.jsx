@@ -32,7 +32,7 @@ const DetailBox = () => {
     },
   ];
   return (
-    <div className=" h-auto max-sm:flex max-sm:p-0 max-sm:flex-col max-sm:w-[100%] bg-[#FFB703] md:px-28 md:py-8 ">
+    <div className=" h-auto max-sm:flex max-sm:p-0 max-sm:flex-col max-sm:w-[100vw] bg-[#FFB703] md:px-28 md:py-8 ">
       <div className="h-auto  w-[100%] max-sm:flex max-sm:flex-col  grid grid-cols-12 grid-rows-8 md:gap-4 max-sm:gap-2">
         {details.map((item) => {
           return (
