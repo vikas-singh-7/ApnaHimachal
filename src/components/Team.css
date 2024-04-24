@@ -1,0 +1,14 @@
+.mobile {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  }
+  
+  .mobile > .flex {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+  }
+  
+  .mobile > .flex > * {
+    flex: 0 0 auto; /* Ensure items don't grow or shrink */
+    width: 100%; /* Each item takes full width */
+  }
+  

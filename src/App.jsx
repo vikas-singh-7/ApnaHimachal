@@ -82,7 +82,7 @@ const App = () => {
   //       console.error("Error fetching data from server:", error);
   //     });
   // }, []);
-  console.log(clanData);
+  
   if (!renderedData) {
     return (
       <>
