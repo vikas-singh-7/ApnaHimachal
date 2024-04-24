@@ -3,7 +3,7 @@ import React from "react";
 const About1 = ({ data, logo, details }) => {
   return (
     <div>
-      <div className="h-[100vh] bg-[#1F7AEB] grid gap-2 grid-cols-2 grid-rows-1 p-5">
+      <div className="h-[100vh] max-sm:hidden bg-[#1F7AEB] grid gap-2 grid-cols-2 grid-rows-1 p-5">
         <div className="   bg-cover bg-center col-span-1  rounded-md">
           <img src={logo} alt="" />
         </div>
@@ -37,6 +37,25 @@ const About1 = ({ data, logo, details }) => {
               </ol>
             </div>
           </div>
+        </div>
+      </div>
+      <div className=" bg-[#1F7AEB] md:hidden flex  flex-col  p-2">
+        <div className="h-full w-full  flex flex-col rounded-md border-2 border-white p-2">
+          <h2 className=" font-mono font-semibold text-[1.5em]  text-black">
+            Stack Used
+          </h2>
+          <div className="row-span-1 text-white font-semibold font-mono px-5 flex justify-center items-center ">
+            <div className="h-full w-full ">
+              <ol className="list-outside text-md list-disc">
+                {details.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div className="  bg-cover bg-center h-[35vh] flex rounded-md">
+          <img src={logo} alt="" />
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const Log = ({ data }) => {
 
   const details = [
     {
-      logo: "./images/logs.png",
+      logo: "./images/sparky.webp",
       details: [
         " Experience and Longevity: Consistently active in wars, showing dedication and perseverance",
         "Teamwork: Our clan works together with strong coordination and strategy.",

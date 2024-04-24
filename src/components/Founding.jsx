@@ -365,7 +365,7 @@ const Founding = ({ data }) => {
         let player;
         if (item.tag == "#9GQ08JJQC") {
           player = item.name;
-          console.log(player);
+          
         }
         return player;
       }),

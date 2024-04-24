@@ -29,7 +29,7 @@ const GirlBox = () => {
           </div>
         </div>
         <div
-          className=" max-sm:flex   md:w-[50%]   flex justify-center items-center "
+          className=" max-sm:flex  max-sm:h-[40vh] md:w-[50%]   flex justify-center items-center "
           
         > <img src="./images/Girl.png" alt="" /></div>
             <div className="w-full md:hidden mt-5">

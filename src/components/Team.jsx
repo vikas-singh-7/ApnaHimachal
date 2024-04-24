@@ -72,8 +72,8 @@ const TeamMembers = ({ data }) => {
 
       {/* Fixed scroll div within the parent container */}
 
-      <div className="md:hidden relative mobile gap-2 p-1  overflow-x-scroll bg-yellow-500 w-[100%]">
-        <div className="flex gap-2">
+      <div className="md:hidden relative mobile gap-2 p-2  overflow-x-scroll bg-yellow-500 w-[100%]">
+        <div className="flex justify-between  items-center gap-2">
           {data.memberList.map((item) => {
             return (
               

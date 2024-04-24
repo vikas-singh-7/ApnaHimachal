@@ -20,7 +20,7 @@ const About = ({ data }) => {
         "Vite",
         "Locomotive Scroll",
         "Coc API",
-        "render cloud"
+        "render cloud",
       ],
     },
   ];
@@ -37,44 +37,99 @@ const About = ({ data }) => {
           />
         );
       })}
-      <div className="h-[15vh] w-[100%] bg-[#1F7AEB]  flex items-center justify-around">
-        <div className="h-[15vh] w-[40%]  p-2 flex justify-around items-center">
-          <a
-            href="https://github.com/vikas-singh-7/ApnaHimachal"
-            className="hover:cursor-pointer h-[95%] w-[70%] hover:bg-slate-200  bg-white flex justify-center items-center rounded-md text-black"
-            target="blank"
-          >
-            <h2 className="text-[2em] font-mono ">View Source Code</h2>
-          </a>
-        </div>
+      <div className="max-sm:hidden">
+        <div className="h-[15vh] w-[100%] bg-[#1F7AEB]  flex items-center justify-around">
+          <div className="h-[15vh] w-[40%]  p-2 flex justify-around items-center">
+            <a
+              href="https://github.com/vikas-singh-7/ApnaHimachal"
+              className="hover:cursor-pointer h-[95%] w-[70%] hover:bg-slate-200  bg-white flex justify-center items-center rounded-md text-black"
+              target="blank"
+            >
+              <h2 className="text-[2em] font-mono ">View Source Code</h2>
+            </a>
+          </div>
 
-        <div className="w-[50%] ">
-          <h3 className="text-xl font-mono text-white font-semibold">
-            Feel Free To Make Out Your Modifications and Contributions :)
-          </h3>
+          <div className="w-[50%] ">
+            <h3 className="text-xl font-mono text-white font-semibold">
+              Feel Free To Make Out Your Modifications and Contributions :)
+            </h3>
+          </div>
+        </div>
+        <div className="h-[70vh] bg-yellow-500 p-2 flex justify-center items-center">
+          <div className="h-[100%] w-[100%] grid gap-2 rounded-md  grid-cols-12 grid-rows-12">
+            <div className="col-span-6 row-span-12 flex justify-center items-center ">
+              <div className="h-[90%] w-[90%]  border-2 rounded-md border-black p-2 ">
+                <div className="h-[30%] flex flex-col ">
+                  <h2 className="text-violet-500 text-[1.8em] font-mono font-semibold">
+                    About Me
+                  </h2>
+                  <h3 className="text-xl mt-4 text-[1.5em] text-zinc-600 font-semibold font-[cursive]">
+                    Vikas Singh,FrontEnd Engineer
+                  </h3>
+                </div>
+                <div className="h-[40%]  justify-center items-center  font-mono font-semibold flex">
+                  <h3 className="text-[1.3em]">
+                    A Noob FrontEnd Enginner Who hate and love to code,I hold
+                    Graduation Degree in Computer Science ,I would say (Covid
+                    Graduation )💀
+                  </h3>
+                </div>
+                <div className="flex h-[30%] w-full justify-start items-center ">
+                  <div className=" h-[60%] hover:bg-zinc-800  transition-all duration-150 ease-linear hover:cursor-pointer flex  justify-center items-center rounded-md w-[30%] bg-black text-white text-lg">
+                    <a
+                      href="https://drive.google.com/file/d/13XRHpjpFnZ5msA-bxjH61mgjn-_9MBBq/view?usp=drivesdk"
+                      target="blank"
+                    >
+                      View Resume
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-6 row-span-12 flex justify-center items-center  ">
+              <div className="h-[100%] flex justify-center  w-[100%] rounded-md  bg-cover bg-center ">
+                <img src="./images/Girl.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="h-[70vh] bg-yellow-500 p-2 flex justify-center items-center">
-        <div className="h-[100%] w-[100%] grid gap-2 rounded-md  grid-cols-12 grid-rows-12">
-          <div className="col-span-6 row-span-12 flex justify-center items-center ">
-            <div className="h-[90%] w-[90%]  border-2 rounded-md border-black p-2 ">
-              <div className="h-[30%] flex flex-col ">
+      <div className="md:hidden">
+        <div className="h-[18vh]  p-2 w-[100%] bg-[#1F7AEB] flex-col flex items-start justify-center">
+          <div className="p-2 flex justify-around items-center">
+            <a
+              href="https://github.com/vikas-singh-7/ApnaHimachal"
+              className="hover:cursor-pointer py-3 px-1 hover:bg-slate-200  bg-white flex justify-center items-center rounded-md text-black"
+              target="blank"
+            >
+              <h2 className="text-[1.4em] font-mono ">View Source Code</h2>
+            </a>
+          </div>
+
+          <div className=" ">
+            <h3 className="text-[1.2em] font-mono text-white font-semibold">
+              Feel Free To Make Out Your Modifications and Contributions :)
+            </h3>
+          </div>
+        </div>
+        <div className=" bg-yellow-500 p-2 flex flex-col justify-center items-center">
+          <div className="flex justify-start flex-col items-start ">
+            <div className="border-[2px] p-2 border-black rounded-md">
+              <div className=" flex gap-3 flex-col ">
                 <h2 className="text-violet-500 text-[1.8em] font-mono font-semibold">
                   About Me
                 </h2>
-                <h3 className="text-xl mt-4 text-[1.5em] text-zinc-600 font-semibold font-[cursive]">
+                <h3 className="text-[1.3em]  text-zinc-600 font-semibold font-mono">
                   Vikas Singh,FrontEnd Engineer
                 </h3>
-              </div>
-              <div className="h-[40%]  justify-center items-center  font-mono font-semibold flex">
-                <h3 className="text-[1.3em]">
+
+                <h3 className="text-[1.3em] font-mono font-semibold">
                   A Noob FrontEnd Enginner Who hate and love to code,I hold
                   Graduation Degree in Computer Science ,I would say (Covid
                   Graduation )💀
                 </h3>
-              </div>
-              <div className="flex h-[30%] w-full justify-start items-center ">
-                <div className=" h-[60%] hover:bg-zinc-800  transition-all duration-150 ease-linear hover:cursor-pointer flex  justify-center items-center rounded-md w-[30%] bg-black text-white text-lg">
+
+                <div className="  hover:bg-zinc-800  transition-all duration-150 ease-linear hover:cursor-pointer flex  justify-center items-center rounded-md w-[50%] py-3 bg-black text-white text-lg">
                   <a
                     href="https://drive.google.com/file/d/13XRHpjpFnZ5msA-bxjH61mgjn-_9MBBq/view?usp=drivesdk"
                     target="blank"
@@ -84,9 +139,8 @@ const About = ({ data }) => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-span-6 row-span-12 flex justify-center items-center  ">
-            <div className="h-[100%] flex justify-center  w-[100%] rounded-md  bg-cover bg-center ">
+
+            <div className=" h-[40vh] flex justify-center  rounded-md  bg-cover bg-center ">
               <img src="./images/Girl.png" alt="" />
             </div>
           </div>

@@ -114,11 +114,11 @@ const Pillars = ({
       >
         <div className="h-[100%]  flex flex-col w-[100%]">
           < div className="  w-full gap-1 flex items-center justify-center flex-col ">
-            <div className=" gap-1 p-1 flex flex-col   border-2 rounded-md ">
+            <div className=" gap-1 p-2 flex flex-col   border-2 rounded-md ">
                   
               <div
                 key={Math.random()}
-                className="bg-gradient-to-r flex flex-col team-card hover:scale-[1.01]  transition-all duration-300 ease-in-out w- h-[100%] from-blue-500 to-zinc-400 shadow-lg rounded-lg px-4 py-2 gap-0  border-[2px] border-white font-mono  text-white"
+                className="bg-gradient-to-r flex flex-col  team-card hover:scale-[1.01]  transition-all duration-300 ease-in-out w- h-[100%] from-blue-500 to-zinc-400 shadow-lg rounded-lg px-4 py-2 gap-0  border-[2px] border-white font-mono  text-white"
               >
                 <div className=" h-[10%] flex items-center  gap-2  font-bold mb-2  ">
                   <span className="text-gray-200 text-[1.2em] ">{name}</span>
@@ -181,7 +181,7 @@ const Pillars = ({
                   </a>
                 </div>
               </div>
-            <div className=" h-[50%]  border-2 border-black  rounded-md p-2">
+            <div className=" h-[50%]   p-2">
               <div className="flex  flex-col ">
                 <h2 className="text-2xl  font-mono ">{name}</h2>
                 <ol className=" list-outside mt-3 ">

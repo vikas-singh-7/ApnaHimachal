@@ -26,7 +26,7 @@ const App = () => {
   const [lastFetchedData, setLastFetchedData] = useState(null);
 
   const fetchData = useCallback(async () => {
-    console.log("req send to server");
+    
     try {
       const response = await fetch("https://render-u0y2.onrender.com/");
       const jsonData = await response.json();
@@ -55,33 +55,12 @@ const App = () => {
 
   // Use useMemo to optimize expensive computations
   const renderedData = useMemo(() => {
-    // Perform computations here if needed
+    
     return clanData;
   }, [clanData]);
 
-  // useEffect(() => {
-  //   console.log("req sent to server")
-  //   // Define the URL for the endpoint you created in your Node.js server
-  //   const url = "http://localhost:3000/api/clash-of-clans";
 
-  //   // Fetch data from the endpoint
-  //   fetch(url)
-  //     .then((response) => {
-  //       if (!response.ok) {
-  //         throw new Error(`HTTP error! status: ${response.status}`);
-  //       }
-  //       return response.json();
-  //     })
-  //     .then((data) => {
-  //       // console.log(data);
-  //       // Set the data to state
-  //       setClanData(data);
-  //       // setLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data from server:", error);
-  //     });
-  // }, []);
+
   
   if (!renderedData) {
     return (
