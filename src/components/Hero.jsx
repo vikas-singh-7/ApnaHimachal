@@ -37,7 +37,7 @@ const Hero = ({ data }) => {
         <p className="md:p-2 rounded-md md:mt-4 text-[1.5rem] ">
           {data.description}
         </p>
-        <div className="md:hidden h-[10vh]  w-full font-[cursive] flex  items-center text-[1.7em]">
+        <div className="md:hidden h-[10vh]  w-full font-mono flex  items-center text-[1.7em]">
           <h2>Welcome To Apna Himachal</h2>
         </div>
       </div>

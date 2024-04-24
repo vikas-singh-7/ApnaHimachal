@@ -9,7 +9,7 @@ const DetailCompo = ({ image, para1, para2 }) => {
       ></div>
       <div className="h-[20%] bg-zinc-800 w-full flex flex-col sm-max:justify-center items-center p-2 ">
         <p className="font-semibold text-md text-white">{para1}</p>
-        <p className="font-semibold text-white font-[cursive]">{para2}</p>
+        <p className="font-semibold text-white font-mono">{para2}</p>
       </div>
     </div>
   );
