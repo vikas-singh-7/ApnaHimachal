@@ -48,23 +48,22 @@ const Eyes = ({ image }) => {
   }, [timer]); // Re-run effect when timer changes
 
   return (
-    <div className="eyes bg-blue-500 md:h-screen w-full overflow-hidden max-sm:hidden">
-      <div className="flex absolute  h-[20vh] w-[100%] justify-around items-center font-semibold font-mono">
-        <div className="h-[4em]  p-2 w-[45%] flex justify-center items-center  bg-zinc-300 rounded-md  font-semibold">
+    <div className="eyes bg-blue-500 h-screen w-full overflow-hidden ">
+      <div className="md:flex absolute  h-[20vh] w-[100%] justify-around items-center font-semibold font-mono">
+        <div className="md:h-[4em] max-sm:h-[15vh] max-sm:mt-[20vh]  p-2 md:w-[45%] flex justify-center items-center  bg-zinc-300 rounded-md  font-semibold">
           <h1>We are getting you the latest information,please wait...</h1>
         </div>
-        <div className="h-[4em] w-[45%]  justify-center items-center font-semibold p-2   bg-zinc-300 rounded-md flex  ">
+        <div className="md:h-[4em] max-sm:h-[15vh]  md:w-[45%]  justify-center items-center font-semibold max-sm:mt-[30vh] p-2   bg-zinc-300 rounded-md flex  ">
           <h1>Noob Server Needs Oil 🚀 Estimate Time : {timer}</h1>
         </div>
       </div>
 
       <div
-        data-scroll
-        data-scroll-speed="-.7"
-        className={`relative md:h-screen w-full bg-center bg-cover`}
+       
+        className={`relative h-screen w-full bg-center bg-cover`}
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
-          <div className="w-[15vw] h-[15vw] bg-zinc-100 rounded-full flex justify-center items-center">
+          <div className="md:w-[15vw] max-sm:w-[30vw] max-sm:h-[14vh] md:h-[15vw] bg-zinc-100 rounded-full flex justify-center items-center">
             <div className="relative w-2/3 h-2/3 bg-black rounded-full">
               <div
                 style={{
@@ -76,7 +75,7 @@ const Eyes = ({ image }) => {
               </div>
             </div>
           </div>
-          <div className="w-[15vw] h-[15vw] bg-zinc-100 rounded-full flex justify-center items-center">
+          <div className="md:w-[15vw] md:h-[15vw] max-sm:w-[30vw] max-sm:h-[14vh]  bg-zinc-100 rounded-full flex justify-center items-center">
             <div className="relative w-2/3 h-2/3 bg-black rounded-full">
               <div
                 style={{
