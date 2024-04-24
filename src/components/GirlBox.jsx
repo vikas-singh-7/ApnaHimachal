@@ -12,7 +12,7 @@ const GirlBox = () => {
             </h1>
           </div>
           <div className=" w-full flex max-sm:pt-5 items-center">
-            <h1 className="font-semibold text-white font-mono max-sm:text-[1.2em] md:text-[1rem]  ">
+            <h1 className="font-semibold text-white font-mono max-sm:text-[1em] md:text-[1rem]  ">
               "Welcome to Apna Himachal! We are a friendly and competitive clan
               focused on teamwork, communication, and growth. We participate in
               regular clan wars and clan games, and are always looking to

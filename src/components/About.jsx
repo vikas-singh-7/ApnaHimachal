@@ -95,21 +95,15 @@ const About = ({ data }) => {
         </div>
       </div>
       <div className="md:hidden">
-        <div className="h-[18vh]  p-2 w-[100%] bg-[#1F7AEB] flex-col flex items-start justify-center">
-          <div className="p-2 flex justify-around items-center">
+        <div className="  p-2 w-[100%] bg-[#1F7AEB] flex-col flex items-start justify-center">
+          <div className="flex w-full h-[8vh]  justify-between items-center">
             <a
               href="https://github.com/vikas-singh-7/ApnaHimachal"
-              className="hover:cursor-pointer py-3 px-1 hover:bg-slate-200  bg-white flex justify-center items-center rounded-md text-black"
+              className="  bg-white flex justify-center items-center  rounded-md text-black w-[100%] h-full"
               target="blank"
             >
-              <h2 className="text-[1.4em] font-mono ">View Source Code</h2>
+              <h2 className=" font-mono text-[1.4em]">Source Code</h2>
             </a>
-          </div>
-
-          <div className=" ">
-            <h3 className="text-[1.2em] font-mono text-white font-semibold">
-              Feel Free To Make Out Your Modifications and Contributions :)
-            </h3>
           </div>
         </div>
         <div className=" bg-yellow-500 p-2 flex flex-col justify-center items-center">
@@ -119,7 +113,7 @@ const About = ({ data }) => {
                 <h2 className="text-violet-500 text-[1.8em] font-mono font-semibold">
                   About Me
                 </h2>
-                <h3 className="text-[1.3em]  text-zinc-600 font-semibold font-mono">
+                <h3 className="text-[1.3em]  text-zinc-800 font-semibold font-mono">
                   Vikas Singh,FrontEnd Engineer
                 </h3>
 
