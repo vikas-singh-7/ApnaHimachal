@@ -1,6 +1,7 @@
 import React from "react";
 
 const Pillars = ({
+  text,
   trophies,
   xp,
   donation,
@@ -109,7 +110,7 @@ const Pillars = ({
         </div>
       </div>
       <div
-        className={`bg-[${color}] md:hidden  w-[full]  flex text-white font-mono font-semibold p-1`}
+        className={`bg-[${color}] md:hidden  w-[full]  flex text-${text} font-mono font-semibold p-1`}
       >
         <div className="h-[100%]  flex flex-col w-[100%]">
           < div className="  w-full gap-1 flex items-center justify-center flex-col ">

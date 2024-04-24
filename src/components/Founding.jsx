@@ -83,8 +83,10 @@ const Founding = ({ data }) => {
         "  Team Builder: You've created a clan of unity and strength,where each member feels valued.",
         "Resourceful Planner: Your resource management and planning skills keep our clan thriving.",
       ],
+      text: "white",
     },
     {
+      text: "black",
       tag: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#92QPQVCLQ") {
@@ -160,6 +162,7 @@ const Founding = ({ data }) => {
       ],
     },
     {
+      text: "white",
       tag: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#9U0QY8LJR") {
@@ -236,6 +239,7 @@ const Founding = ({ data }) => {
       ],
     },
     {
+      text: "black",
       tag: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#2VPYPGLJ9") {
@@ -310,6 +314,7 @@ const Founding = ({ data }) => {
       ],
     },
     {
+      text: "white",
       ExpLevel: data.memberList.map((item, index) => {
         let player;
         if (item.tag == "#9GQ08JJQC") {
@@ -394,7 +399,7 @@ const Founding = ({ data }) => {
       {pillars.map((item) => {
         return (
           <Pillars
-           
+            text={item.text}
             townHallLevel={item.townhall}
             key={item.name}
             color={item.color}
