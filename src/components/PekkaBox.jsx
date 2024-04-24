@@ -3,7 +3,7 @@ import React from "react";
 const PekkaBox = () => {
   return (
     <>
-      <div className="h-[100vh] max-sm:h-auto max-sm:flex max-sm:py-5 max-sm:flex-col  bg-[#1F7AEB] flex gap-2 justify-center items-center">
+      <div className="h-[100vh] max-sm:hidden max-sm:h-auto max-sm:flex max-sm:py-5 max-sm:flex-col  bg-[#1F7AEB] flex gap-2 justify-center items-center">
         <div className="image h-full w-full  bg-cover bg-center  ">
           <img src="./images/pekka.png" alt="" />
         </div>

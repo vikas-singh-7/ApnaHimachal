@@ -53,8 +53,9 @@ const Eyes = ({ image }) => {
         <div className="md:h-[4em] max-sm:h-[15vh] max-sm:mt-[20vh]  p-2 md:w-[45%] flex justify-center items-center  bg-zinc-300 rounded-md  font-semibold">
           <h1>We are getting you the latest information,please wait...</h1>
         </div>
-        <div className="md:h-[4em] max-sm:h-[15vh]  md:w-[45%]  justify-center items-center font-semibold max-sm:mt-[30vh] p-2   bg-zinc-300 rounded-md flex  ">
-          <h1>Noob Server Needs Oil 🚀 Estimate Time : {timer}</h1>
+        <div className="md:h-[4em] max-sm:h-[15vh]  md:w-[45%]  md:justify-center items-center font-semibold max-sm:mt-[30vh] p-2   bg-zinc-300 rounded-md flex  ">
+          <h1>Noob Server Needs Oil 🚀</h1>
+          <h1> Estimate Time : {timer}</h1>
         </div>
       </div>
 
