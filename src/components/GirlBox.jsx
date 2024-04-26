@@ -51,7 +51,7 @@ const GirlBox = () => {
       </div>
       <div className=" md:hidden p-2  bg-[#003A96]   max-sm:h-auto">
         <div className=" flex flex-col gap-2">
-          <div className="">
+          {/* <div className="">
          
             <video
               src="./archer3.mp4"
@@ -60,7 +60,7 @@ const GirlBox = () => {
               muted
               className="rounded-md"
             ></video>
-          </div>
+          </div> */}
           <div className=" flex flex-col  justify-center items-center">
             <div className=" md:h-[20%] w-full flex items-center">
               <h1 className="font-semibold text-white font-mono text-[2rem] leading-none tracking-tight ">
