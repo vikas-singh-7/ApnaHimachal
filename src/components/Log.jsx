@@ -32,7 +32,7 @@ const Log = ({ data }) => {
   ];
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       {details.map((item, index) => {
         return index == 0 ? (

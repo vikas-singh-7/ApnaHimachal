@@ -394,7 +394,7 @@ const Founding = ({ data }) => {
   ];
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <TeamPlayet/> */}
       {pillars.map((item) => {
         return (

@@ -26,7 +26,7 @@ const About = ({ data }) => {
   ];
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {details.map((item) => {
         return (
           <About1
@@ -96,24 +96,19 @@ const About = ({ data }) => {
       </div>
       <div className="md:hidden">
         <div className="  p-2 w-[100%] bg-[#1F7AEB] flex-col flex items-start justify-center">
-          <div className="flex w-full h-[8vh]  justify-between items-center">
-            <a
-              href="https://github.com/vikas-singh-7/ApnaHimachal"
-              className="  bg-white flex justify-center items-center  rounded-md text-black w-[100%] h-full"
-              target="blank"
-            >
-              <h2 className=" font-mono text-[1.4em]">Source Code</h2>
-            </a>
-          </div>
+          
         </div>
-        <div className=" bg-yellow-500 p-2 flex flex-col justify-center items-center">
-          <div className="flex justify-start flex-col items-start ">
-            <div className="border-[2px] p-2 border-black rounded-md">
+        <div className=" bg-[#1F7AEB] p-2 flex flex-col justify-center items-center">
+          <div className="flex justify-start flex-col items-start text-white ">
+            <div className="border-[2px] p-2  rounded-md">
               <div className=" flex gap-3 flex-col ">
-                <h2 className="text-violet-500 text-[1.8em] font-mono font-semibold">
+            <div className=" h-[40vh] flex justify-center  rounded-md  bg-cover bg-center ">
+              <img src="./images/Girl.png" alt="" />
+            </div>
+                <h2 className=" text-[1.8em] font-mono font-semibold">
                   About Me
                 </h2>
-                <h3 className="text-[1.3em]  text-zinc-800 font-semibold font-mono">
+                <h3 className="text-[1.3em]   font-semibold font-mono">
                   Vikas Singh,FrontEnd Engineer
                 </h3>
 
@@ -134,11 +129,18 @@ const About = ({ data }) => {
               </div>
             </div>
 
-            <div className=" h-[40vh] flex justify-center  rounded-md  bg-cover bg-center ">
-              <img src="./images/Girl.png" alt="" />
-            </div>
           </div>
+          
         </div>
+        <div className="flex w-full h-[8vh] p-1  justify-between items-center">
+            <a
+              href="https://github.com/vikas-singh-7/ApnaHimachal"
+              className="  bg-white flex justify-center items-center  rounded-md text-black w-[100%] h-full"
+              target="blank"
+            >
+              <h2 className=" font-mono text-[1.4em]">Source Code</h2>
+            </a>
+          </div>
       </div>
     </>
   );

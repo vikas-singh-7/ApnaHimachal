@@ -13,7 +13,7 @@ const TeamMembers = ({ data }) => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="h-screen max-sm:hidden bg-[#1F7AEB]  ">
         <div className="grid p-1  gap-2 grid-rows-12 grid-cols-12 h-[100vh] ">
           <div className="row-span-9  overflow-hidden flex border-[2px] rounded-md col-span-7 ">

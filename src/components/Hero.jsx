@@ -24,10 +24,10 @@ const Hero = ({ data }) => {
       </div>
     </div>
     <div
-      className="md:hidden pb-4 h-auto w-full max-sm:bg-blue-500 max-sm:text-white   bg-center bg-cover md:relative  "
+      className="md:hidden pb-4 h-auto w-full bg-[#1F7AEB] max-sm:text-white   bg-center bg-cover md:relative  "
       
     >
-      <div className="md:hidden  bg-blue-500 flex p-1  ">
+      <div className="md:hidden  bg-[#1F7AEB] flex p-1  ">
         <div className="flex  w-full justify-center items-center"><img src={data.badgeUrls.medium} alt="" className="h-[10vh] w-auto " /></div>
       </div>
       <div className="  p-1">

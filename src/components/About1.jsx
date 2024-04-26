@@ -54,9 +54,7 @@ const About1 = ({ data, logo, details }) => {
             </div>
           </div>
         </div>
-        <div className="  bg-cover bg-center h-[35vh] flex rounded-md">
-          <img src={logo} alt="" />
-        </div>
+       
       </div>
     </div>
   );

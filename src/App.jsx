@@ -7,7 +7,7 @@ import PekkaBox from "./components/PekkaBox";
 import Footer from "./components/Footer";
 import Log from "./components/Log";
 import LocomotiveScroll from "locomotive-scroll";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Founding from "./components/Founding";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -16,14 +16,15 @@ import TeamMembers from "./components/Team";
 import About from "./components/About";
 import Eyes from "./Eyes";
 import Maintainence from "./components/Maintainence";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const locomotiveScroll = new LocomotiveScroll();
-  const [clanData, setClanData] = useState("");
 
+  const location = useLocation();
+  const [clanData, setClanData] = useState("");
   const [lastFetchedData, setLastFetchedData] = useState(null);
 
   const fetchData = useCallback(async () => {
@@ -71,6 +72,7 @@ const App = () => {
   } else {
     return (
       <>
+        {location.pathname !== "/" && <Navbar />}
         <div className=" bg-blue-500">
           <Routes>
             <Route
@@ -88,7 +90,7 @@ const App = () => {
             <Route path="/team" element={<TeamMembers data={clanData} />} />
             <Route path="/about" element={<About data={clanData} />} />
           </Routes>
-          
+
           <Footer />
         </div>
       </>
