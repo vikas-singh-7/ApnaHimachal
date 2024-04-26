@@ -30,11 +30,7 @@ const GirlBox = () => {
             </div>
           </div>
           <div className=" max-sm:flex  rounded-md max-sm:h-[40vh] md:w-[50%]   flex p-1    overflow-hidden    justify-center items-center ">
-            {/* <img
-            src="./images/queen.png"
-            className="rounded-md transition-all duration-200 ease-linear hover:scale-105 h-[100%] w-[full]"
-            alt=""
-          /> */}
+           
             <video
               src="./archer3.mp4"
               loop
@@ -51,6 +47,13 @@ const GirlBox = () => {
       </div>
       <div className=" md:hidden p-2  bg-[#003A96]   max-sm:h-auto">
         <div className=" flex flex-col gap-2">
+          <div className="w-full">
+          <img
+            src="./images/queen.png"
+            className="rounded-md transition-all duration-200 ease-linear hover:scale-105 h-[50vh]"
+            alt=""
+          />
+          </div>
           {/* <div className="">
          
             <video
