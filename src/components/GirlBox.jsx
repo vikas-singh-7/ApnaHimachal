@@ -36,7 +36,7 @@ const GirlBox = () => {
             alt=""
           /> */}
             <video
-              src="./archer.mp4"
+              src="./archer3.mp4"
               loop
               autoPlay
               muted
@@ -54,7 +54,7 @@ const GirlBox = () => {
           <div className="">
          
             <video
-              src="./archer.mp4"
+              src="./archer3.mp4"
               loop
               autoPlay
               muted

@@ -6,7 +6,7 @@ const PekkaBox = () => {
       <div className="h-auto  pb-4  max-sm:hidden   bg-[#1F7AEB] flex gap-2 justify-center items-center">
         <div className="image  w-[100%]  flex rounded-md  p-2 ">
           {/* <img src="./images/royal.jpg" alt="" /> */}
-          <video src="./royal.mp4" className="rounded-md "loop autoPlay muted></video>
+          <video src="./royal3.mp4" className="rounded-md "loop autoPlay muted></video>
         </div>
 
         <div className="image h-full w-full  bg-cover bg-center flex flex-col justify-start ">
@@ -54,9 +54,9 @@ const PekkaBox = () => {
           </div>
         </div>
       </div>
-      <div className="h-auto  pb-4  md:hidden   bg-[#1F7AEB] flex flex-col gap-2 justify-center items-center">
+      {/* <div className="h-auto  pb-4  md:hidden   bg-[#1F7AEB] flex flex-col gap-2 justify-center items-center">
         <div className="image  w-[100%]  flex rounded-md  p-2 ">
-          {/* <img src="./images/royal.jpg" alt="" /> */}
+          <img src="./images/royal.jpg" alt="" />
           <video src="./royal.mp4" className="rounded-md "loop autoPlay muted></video>
         </div>
 
@@ -104,7 +104,7 @@ const PekkaBox = () => {
             </ol>{" "}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

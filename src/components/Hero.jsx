@@ -24,15 +24,15 @@ const Hero = ({ data }) => {
       </div>
     </div>
     <div
-      className="md:hidden w-full max-sm:bg-blue-500 max-sm:text-white   bg-center bg-cover md:relative  "
+      className="md:hidden pb-4 h-auto w-full max-sm:bg-blue-500 max-sm:text-white   bg-center bg-cover md:relative  "
       
     >
       <div className="md:hidden  bg-blue-500 flex p-1  ">
-        <div className="flex h-[18vh]  items-center"><img src={data.badgeUrls.medium} alt="" className="h-[60%]" /></div>
+        <div className="flex  w-full justify-center items-center"><img src={data.badgeUrls.medium} alt="" className="h-[10vh] w-auto " /></div>
       </div>
-      <div className=" h-[35vh] p-1">
-        <h1 className="md:text-[3.5rem] max-sm:text-[2em] md:tracking-tighter md:font-semibold font-mono max-sm:flex max-sm:justify-start">
-          {data.name}
+      <div className="  p-1">
+        <h1 className="  flex justify-center items-center max-sm:text-[2em]  font-mono max-sm:flex pb-2 ">
+          <p>{data.name}</p>
         </h1>
         <p className="md:p-2 rounded-md md:mt-4 text-[1.5rem] ">
           "{data.description}"
