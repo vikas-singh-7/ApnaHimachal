@@ -6,7 +6,7 @@ import Log2 from "./Log2";
 
 const Log = ({ data }) => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
+    window.scrollTo(0, 0); 
   }, []);
 
   const details = [

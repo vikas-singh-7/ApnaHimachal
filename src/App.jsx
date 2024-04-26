@@ -15,6 +15,7 @@ import { useState } from "react";
 import TeamMembers from "./components/Team";
 import About from "./components/About";
 import Eyes from "./Eyes";
+import Maintainence from "./components/Maintainence";
 
 const App = () => {
   useEffect(() => {
@@ -26,7 +27,6 @@ const App = () => {
   const [lastFetchedData, setLastFetchedData] = useState(null);
 
   const fetchData = useCallback(async () => {
-    
     try {
       const response = await fetch("https://render-u0y2.onrender.com/");
       const jsonData = await response.json();
@@ -38,34 +38,34 @@ const App = () => {
       }
     } catch (error) {
       console.error("Error fetching data:", error);
+      setClanData("");
     }
   }, [lastFetchedData]);
 
   useEffect(() => {
     fetchData();
 
-    // Set up polling to fetch data every 10 seconds
     const intervalId = setInterval(fetchData, 12000);
 
-    // Cleanup interval when component unmounts
     return () => {
       clearInterval(intervalId);
     };
   }, [fetchData]);
 
-  // Use useMemo to optimize expensive computations
   const renderedData = useMemo(() => {
-    
     return clanData;
   }, [clanData]);
 
-
-
-  
   if (!renderedData) {
     return (
       <>
-      <Eyes className="max-sm:hidden"/>
+        <Eyes className="max-sm:hidden" />
+      </>
+    );
+  } else if (!clanData) {
+    return (
+      <>
+        <Maintainence />
       </>
     );
   } else {
@@ -88,7 +88,7 @@ const App = () => {
             <Route path="/team" element={<TeamMembers data={clanData} />} />
             <Route path="/about" element={<About data={clanData} />} />
           </Routes>
-
+          
           <Footer />
         </div>
       </>
@@ -97,5 +97,3 @@ const App = () => {
 };
 
 export default App;
-
-// make routes for xp and team and compo also
