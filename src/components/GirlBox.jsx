@@ -30,14 +30,7 @@ const GirlBox = () => {
             </div>
           </div>
           <div className=" max-sm:flex  rounded-md max-sm:h-[40vh] md:w-[50%]   flex p-1    overflow-hidden    justify-center items-center ">
-           
-            <video
-              src="./archer3.mp4"
-              loop
-              autoPlay
-              muted
-              className="rounded-md"
-            ></video>
+           <img src="./images/paplu.png" alt="" className=" h-[80vh]  "/>
           </div>
           <div className="w-full md:hidden ">
             {" "}

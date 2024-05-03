@@ -5,8 +5,8 @@ const PekkaBox = () => {
     <>
       <div className="h-auto  pb-4  max-sm:hidden   bg-[#1F7AEB] flex gap-2 justify-center items-center">
         <div className="image  w-[100%]  flex rounded-md  p-2 ">
-          {/* <img src="./images/royal.jpg" alt="" /> */}
-          <video src="./royal3.mp4" className="rounded-md "loop autoPlay muted></video>
+          <img src="./images/queen.png" className="h-[80vh]" alt="" />
+          
         </div>
 
         <div className="image h-full w-full  bg-cover bg-center flex flex-col justify-start ">
